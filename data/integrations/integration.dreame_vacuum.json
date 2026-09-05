@@ -1,0 +1,73 @@
+{
+  "id": "integration.dreame_vacuum",
+  "kind": "integration",
+  "version": "ae8422f281716ef064c8cdf14164e8c294afd476",
+  "official": false,
+  "supported_model_ids": [],
+  "signal_contracts": [
+    {
+      "role": "water_level",
+      "key": "water_volume",
+      "unit": null,
+      "semantics": "Ordinal output setting. With tank; unavailable during customized cleaning outside zone/spot.",
+      "verified": false
+    },
+    {
+      "role": "water_level",
+      "key": "mop_pad_humidity",
+      "unit": null,
+      "semantics": "Ordinal humidity setting. Self-wash base; same customized-cleaning restriction.",
+      "verified": false
+    },
+    {
+      "role": "cleaning_mode",
+      "key": "cleaning_mode",
+      "unit": null,
+      "semantics": "Sweeping/Mopping/combined options; change control unavailable during cleaning. Options depend on capabilities.",
+      "verified": false
+    },
+    {
+      "role": "wash_frequency",
+      "key": "self_clean_area",
+      "unit": null,
+      "semantics": "Area return setting; self-wash base only; values model-dependent.",
+      "verified": false
+    },
+    {
+      "role": "wash_mode",
+      "key": "mop_wash_level",
+      "unit": null,
+      "semantics": "Wash usage level; documented availability requires self-wash base and external water input.",
+      "verified": false
+    },
+    {
+      "role": "detergent_mode",
+      "key": "auto_add_detergent",
+      "unit": null,
+      "semantics": "Detergent enable switch; requires self-wash base and cartridge.",
+      "verified": false
+    }
+  ],
+  "hardware_verified": false,
+  "provenance": [
+    {
+      "url": "https://github.com/Tasshack/dreame-vacuum/blob/master/docs/entities.md",
+      "date": "2026-09-05",
+      "type": "integration_code",
+      "claim": "snapshot accessed 2026-09-05; upstream not pinned; inventory only, no hardware verification."
+    },
+    {
+      "url": "https://github.com/Tasshack/dreame-vacuum/blob/ae8422f281716ef064c8cdf14164e8c294afd476/docs/entities.md",
+      "date": "2026-09-05",
+      "type": "integration_code",
+      "claim": "Generic select contracts are conditional on capabilities/customized cleaning; exact L10s firmware mappings unverified."
+    }
+  ],
+  "confidence": "unknown",
+  "unknowns": [
+    "Per-model firmware and regional signal presence",
+    "Minimum supported upstream version not established",
+    "No sanitized real hardware fixture",
+    "Model-specific bindings require review"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "concept_vr4050",
+  "kind": "model",
+  "manufacturer": "Concept",
+  "name": "VR4050",
+  "public_model_ids": [
+    "VR4050"
+  ],
+  "regional_skus": [],
+  "integration_candidates": [],
+  "reservoirs_ml": {
+    "dock_clean": null,
+    "dock_dirty": null,
+    "robot_clean": null,
+    "robot_dirty": null,
+    "detergent": null
+  },
+  "inventory_status": "researched_partial",
+  "provenance": [
+    {
+      "url": "https://www.my-concept.sk/img.asp?attid=56409021",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "Manual identifies VR4050; printed pages 100–101 describe wash settings."
+    }
+  ],
+  "confidence": "declared",
+  "unknowns": [
+    "Regional SKU equivalence",
+    "HA binding",
+    "Firmware applicability",
+    "Reservoir capacities not imported"
+  ]
+}

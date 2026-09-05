@@ -1,0 +1,36 @@
+{
+  "id": "samsung_bespoke_jet_bot_combo_steam_vr7md96514g_eu",
+  "kind": "model",
+  "manufacturer": "Samsung",
+  "name": "Bespoke Jet Bot Combo Steam VR7MD96514G/EU",
+  "public_model_ids": [],
+  "regional_skus": [
+    "VR7MD96514G/EU"
+  ],
+  "integration_candidates": [
+    "smartthings"
+  ],
+  "reservoirs_ml": {
+    "dock_clean": null,
+    "dock_dirty": null,
+    "robot_clean": null,
+    "robot_dirty": null,
+    "detergent": null
+  },
+  "inventory_status": "researched_partial",
+  "provenance": [
+    {
+      "url": "https://www.samsung.com/uk/vacuum-cleaners/robot/70w--jet-bot-combo--all-in-one-clean-station-steam-plus-with-steamwash-satin-greige-vr7md96514g-eu/",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "Named model in reviewed source; unknown values are not compatibility or capacity claims."
+    }
+  ],
+  "confidence": "unknown",
+  "unknowns": [
+    "Exact HA model identifier and firmware signal presence unverified",
+    "Regional SKU equivalence unverified",
+    "Consumption and wash rates unmeasured",
+    "Null reservoir capacities mean unknown, not absent"
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+    },
+    "kind": {
+      "const": "integration"
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "type": {
+            "enum": [
+              "manufacturer",
+              "integration_code",
+              "public_protocol",
+              "empirical",
+              "synthetic"
+            ]
+          },
+          "claim": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "url",
+          "date",
+          "type",
+          "claim"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "confidence": {
+      "enum": [
+        "unknown",
+        "declared",
+        "measured",
+        "validated",
+        "synthetic"
+      ]
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "version": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "official": {
+      "type": "boolean"
+    },
+    "supported_model_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+      },
+      "minItems": 0
+    },
+    "signal_contracts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "type": "string",
+            "minLength": 1
+          },
+          "key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "semantics": {
+            "type": "string",
+            "minLength": 1
+          },
+          "verified": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "role",
+          "key",
+          "unit",
+          "semantics",
+          "verified"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "hardware_verified": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "kind",
+    "provenance",
+    "confidence",
+    "unknowns",
+    "version",
+    "official",
+    "supported_model_ids",
+    "signal_contracts",
+    "hardware_verified"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,52 @@
+{
+  "id": "concept_vr4050_wash_standard",
+  "kind": "observation",
+  "context": {
+    "model_id": "concept_vr4050",
+    "sku": null,
+    "dock_variant": null,
+    "firmware": null,
+    "integration_id": null,
+    "integration_version": null,
+    "reservoir": "dock_clean",
+    "action": "mop_wash",
+    "settings": {
+      "mop_mode": null,
+      "water_level": null,
+      "route": null,
+      "passes": null,
+      "wash_mode": "standard",
+      "wash_frequency": null,
+      "wash_temperature": null,
+      "adaptive_mode": null,
+      "detergent_mode": null,
+      "cleaning_mode": null,
+      "task_scope": null,
+      "suction_level": null,
+      "carpet_policy": null
+    }
+  },
+  "quantity": {
+    "value": 130,
+    "unit": "ml/action"
+  },
+  "source_class": "manufacturer_declaration",
+  "sample_count": 0,
+  "measurement": null,
+  "runtime_eligible": false,
+  "provenance": [
+    {
+      "url": "https://www.my-concept.sk/img.asp?attid=56409021",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "Manual PDF page 51, printed pages 100–101: standard fabric cleaning uses 130 ml and lasts 91 seconds."
+    }
+  ],
+  "confidence": "declared",
+  "unknowns": [
+    "HA integration and property binding",
+    "Firmware and regional equivalence",
+    "Whether concurrent robot refill is included",
+    "Independent validation"
+  ]
+}

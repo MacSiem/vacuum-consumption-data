@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+    },
+    "kind": {
+      "const": "settings_catalog"
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "type": {
+            "enum": [
+              "manufacturer",
+              "integration_code",
+              "public_protocol",
+              "empirical",
+              "synthetic"
+            ]
+          },
+          "claim": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "url",
+          "date",
+          "type",
+          "claim"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "confidence": {
+      "enum": [
+        "unknown",
+        "declared",
+        "measured",
+        "validated",
+        "synthetic"
+      ]
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "model_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dimensions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true,
+            "minItems": 1
+          },
+          "ha_value_mapping_verified": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "options",
+          "ha_value_mapping_verified"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "when": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minProperties": 1
+          },
+          "allowed": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "minProperties": 1
+          },
+          "evidence_url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          }
+        },
+        "required": [
+          "id",
+          "when",
+          "allowed",
+          "evidence_url"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "relationships_complete": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "kind",
+    "provenance",
+    "confidence",
+    "unknowns",
+    "model_id",
+    "dimensions",
+    "rules",
+    "relationships_complete"
+  ],
+  "additionalProperties": false
+}

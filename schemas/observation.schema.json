@@ -1,0 +1,376 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+    },
+    "kind": {
+      "const": "observation"
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "type": {
+            "enum": [
+              "manufacturer",
+              "integration_code",
+              "public_protocol",
+              "empirical",
+              "synthetic"
+            ]
+          },
+          "claim": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "url",
+          "date",
+          "type",
+          "claim"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "confidence": {
+      "enum": [
+        "unknown",
+        "declared",
+        "measured",
+        "validated",
+        "synthetic"
+      ]
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "context": {
+      "type": "object",
+      "properties": {
+        "model_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+        },
+        "sku": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "dock_variant": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "firmware": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "integration_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "integration_version": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "reservoir": {
+          "enum": [
+            "dock_clean",
+            "dock_dirty",
+            "robot_clean",
+            "robot_dirty",
+            "detergent"
+          ]
+        },
+        "action": {
+          "type": "string",
+          "minLength": 1
+        },
+        "settings": {
+          "type": "object",
+          "properties": {
+            "mop_mode": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "water_level": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "route": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "passes": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "wash_mode": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "wash_frequency": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "wash_temperature": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "adaptive_mode": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "detergent_mode": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "cleaning_mode": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "task_scope": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "suction_level": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "carpet_policy": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            }
+          },
+          "required": [
+            "mop_mode",
+            "water_level",
+            "route",
+            "passes",
+            "wash_mode",
+            "wash_frequency",
+            "wash_temperature",
+            "adaptive_mode",
+            "detergent_mode",
+            "cleaning_mode",
+            "task_scope",
+            "suction_level",
+            "carpet_policy"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "model_id",
+        "sku",
+        "dock_variant",
+        "firmware",
+        "integration_id",
+        "integration_version",
+        "reservoir",
+        "action",
+        "settings"
+      ],
+      "additionalProperties": false
+    },
+    "quantity": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "unit": {
+          "enum": [
+            "ml/action",
+            "ml/m2",
+            "ml/min",
+            "ml/cycle",
+            "g/action"
+          ]
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "source_class": {
+      "enum": [
+        "manufacturer_declaration",
+        "empirical",
+        "synthetic"
+      ]
+    },
+    "sample_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "measurement": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "series_id": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+            },
+            "cycle_id": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+            },
+            "instrument_resolution_ml": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "scope": {
+              "enum": [
+                "floor_only",
+                "wash_only",
+                "whole_cycle"
+              ]
+            },
+            "observed_ml": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "exposure": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "exposure_unit": {
+              "enum": [
+                "m2",
+                "min",
+                "action",
+                "cycle"
+              ]
+            },
+            "split": {
+              "enum": [
+                "train",
+                "validation"
+              ]
+            },
+            "settings_constant": {
+              "const": true
+            },
+            "interrupted": {
+              "const": false
+            },
+            "publication_consent": {
+              "const": true
+            }
+          },
+          "required": [
+            "series_id",
+            "cycle_id",
+            "instrument_resolution_ml",
+            "scope",
+            "observed_ml",
+            "exposure",
+            "exposure_unit",
+            "split",
+            "settings_constant",
+            "interrupted",
+            "publication_consent"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "runtime_eligible": {
+      "const": false
+    }
+  },
+  "required": [
+    "id",
+    "kind",
+    "provenance",
+    "confidence",
+    "unknowns",
+    "context",
+    "quantity",
+    "source_class",
+    "sample_count",
+    "measurement",
+    "runtime_eligible"
+  ],
+  "additionalProperties": false
+}

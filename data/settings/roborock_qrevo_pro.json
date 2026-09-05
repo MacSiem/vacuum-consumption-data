@@ -1,0 +1,44 @@
+{
+  "id": "settings.roborock_qrevo_pro",
+  "kind": "settings_catalog",
+  "model_id": "roborock_qrevo_pro",
+  "dimensions": [
+    {
+      "name": "wash_mode",
+      "options": [
+        "smart",
+        "light",
+        "balanced",
+        "deep"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "carpet_policy",
+      "options": [
+        "rise",
+        "avoid",
+        "ignore",
+        "cross"
+      ],
+      "ha_value_mapping_verified": false
+    }
+  ],
+  "rules": [],
+  "relationships_complete": false,
+  "confidence": "declared",
+  "unknowns": [
+    "Full cleaning mode/water intensity/route/pass choices",
+    "Allowed wash intervals beyond default",
+    "HA enum and transient carpet-state exposure",
+    "Dynamic wash volume and firmware applicability"
+  ],
+  "provenance": [
+    {
+      "url": "https://help.roborock.com/us/product/roborock-qrevo-pro-message?category=faqs",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "Qrevo Pro FAQ lists four wash modes and carpet policies. Smart adapts water/time to dirt; default wash interval 15 minutes, other values not enumerated. Rise stops water on carpet; Cross traverses without cleaning."
+    }
+  ]
+}

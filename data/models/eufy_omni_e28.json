@@ -1,0 +1,38 @@
+{
+  "id": "eufy_omni_e28",
+  "kind": "model",
+  "manufacturer": "eufy",
+  "name": "Omni E28",
+  "public_model_ids": [],
+  "regional_skus": [],
+  "integration_candidates": [],
+  "reservoirs_ml": {
+    "dock_clean": 2500,
+    "dock_dirty": 1800,
+    "robot_clean": null,
+    "robot_dirty": null,
+    "detergent": null
+  },
+  "inventory_status": "researched_partial",
+  "provenance": [
+    {
+      "url": "https://us.eufy.com/blogs/robovac/eufy-robot-vacuum-buying-guide",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "Named model in reviewed source; unknown values are not compatibility or capacity claims."
+    },
+    {
+      "url": "https://www.eufy.com/uk/robot-vacuum-e28",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "UK E25 and E28 specifications: clean tank 2.5 L, dirty 1.8 L; HA water surface not verified."
+    }
+  ],
+  "confidence": "declared",
+  "unknowns": [
+    "Exact HA model identifier and firmware signal presence unverified",
+    "Regional SKU equivalence unverified",
+    "Consumption and wash rates unmeasured",
+    "Null reservoir capacities mean unknown, not absent"
+  ]
+}

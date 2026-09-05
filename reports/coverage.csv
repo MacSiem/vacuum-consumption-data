@@ -1,0 +1,135 @@
+known_setting_dimensions,known_option_values,setting_relationships_verified,model_id,manufacturer,name,declared_quantities,measured_observations,approved_profiles,mode_action_inventory,automatic_consumption_complete
+0,0,False,cecotec_conga_3290,Cecotec,Conga 3290,0,0,0,unknown,False
+0,0,False,cecotec_conga_3790,Cecotec,Conga 3790,0,0,0,unknown,False
+0,0,False,commodore_cvr_200,Commodore,CVR 200,0,0,0,unknown,False
+4,12,False,concept_vr4050,Concept,VR4050,2,0,0,unknown,False
+0,0,False,dreame_d10s_plus,Dreame,D10s Plus,0,0,0,unknown,False
+0,0,False,dreame_d10s_pro,Dreame,D10s Pro,0,0,0,unknown,False
+0,0,False,dreame_d9,Dreame,D9,0,0,0,unknown,False
+0,0,False,dreame_d9_pro,Dreame,D9 Pro,0,0,0,unknown,False
+0,0,False,dreame_f9,Dreame,F9,0,0,0,unknown,False
+0,0,False,dreame_l10_pro,Dreame,L10 Pro,0,0,0,unknown,False
+0,0,False,dreame_l10_ultra,Dreame,L10 Ultra,0,0,0,unknown,False
+0,0,False,dreame_l10s_pro_ultra,Dreame,L10s Pro Ultra,0,0,0,unknown,False
+0,0,False,dreame_l10s_pro_ultra_heat,Dreame,L10s Pro Ultra Heat,0,0,0,unknown,False
+0,0,False,dreame_l10s_ultra,Dreame,L10s Ultra,0,0,0,unknown,False
+0,0,False,dreame_l10s_ultra_gen_2,Dreame,L10s Ultra Gen 2,0,0,0,unknown,False
+0,0,False,dreame_l20_ultra,Dreame,L20 Ultra,0,0,0,unknown,False
+0,0,False,dreame_l30_ultra,Dreame,L30 Ultra,0,0,0,unknown,False
+0,0,False,dreame_l40_ultra,Dreame,L40 Ultra,0,0,0,unknown,False
+0,0,False,dreame_l40_ultra_gen_2,Dreame,L40 Ultra Gen 2,0,0,0,unknown,False
+0,0,False,dreame_w10,Dreame,W10,0,0,0,unknown,False
+0,0,False,dreame_w10_pro,Dreame,W10 Pro,0,0,0,unknown,False
+0,0,False,dreame_x30_ultra,Dreame,X30 Ultra,0,0,0,unknown,False
+0,0,False,dreame_x40_master,Dreame,X40 Master,0,0,0,unknown,False
+0,0,False,dreame_x40_ultra,Dreame,X40 Ultra,0,0,0,unknown,False
+0,0,False,dreame_x50_ultra,Dreame,X50 Ultra,0,0,0,unknown,False
+0,0,False,dreame_z10_pro,Dreame,Z10 Pro,0,0,0,unknown,False
+0,0,False,ecovacs_deebot_n30_pro_omni,Ecovacs,ECOVACS DEEBOT N30 PRO OMNI,0,0,0,unknown,False
+0,0,False,ecovacs_deebot_t30_pro_omni,Ecovacs,ECOVACS DEEBOT T30 PRO OMNI,0,0,0,unknown,False
+0,0,False,ecovacs_deebot_t50_pro_omni,Ecovacs,ECOVACS DEEBOT T50 PRO OMNI,0,0,0,unknown,False
+0,0,False,ecovacs_deebot_x1_omni,Ecovacs,ECOVACS DEEBOT X1 OMNI,0,0,0,unknown,False
+0,0,False,ecovacs_deebot_x2_omni,Ecovacs,ECOVACS DEEBOT X2 OMNI,0,0,0,unknown,False
+0,0,False,ecovacs_deebot_x5_hybrid,Ecovacs,ECOVACS DEEBOT X5 HYBRID,0,0,0,unknown,False
+0,0,False,ecovacs_deebot_x8_pro_omni,Ecovacs,ECOVACS DEEBOT X8 PRO OMNI,0,0,0,unknown,False
+0,0,False,eufy_omni_c20,eufy,Omni C20,0,0,0,unknown,False
+0,0,False,eufy_omni_c28,eufy,Omni C28,0,0,0,unknown,False
+0,0,False,eufy_omni_e25,eufy,Omni E25,0,0,0,unknown,False
+0,0,False,eufy_omni_e28,eufy,Omni E28,0,0,0,unknown,False
+0,0,False,eufy_omni_s1,eufy,Omni S1,0,0,0,unknown,False
+0,0,False,eufy_omni_s2,eufy,Omni S2,0,0,0,unknown,False
+3,9,False,eufy_x10_pro_omni,eufy,X10 Pro Omni,0,0,0,unknown,False
+0,0,False,eureka_e20_evo_plus,Eureka,E20 Evo Plus,0,0,0,unknown,False
+0,0,False,eureka_e20_plus,Eureka,E20 Plus,0,0,0,unknown,False
+0,0,False,eureka_j12_ultra,Eureka,J12 Ultra,0,0,0,unknown,False
+0,0,False,eureka_j15_max_ultra,Eureka,J15 Max Ultra,0,0,0,unknown,False
+0,0,False,eureka_j15_pro_ultra,Eureka,J15 Pro Ultra,0,0,0,unknown,False
+0,0,False,eureka_j15_ultra,Eureka,J15 Ultra,0,0,0,unknown,False
+0,0,False,ikohs_netbot_ls22,IKOHS,Netbot LS22,0,0,0,unknown,False
+0,0,False,irobot_braava_jet_m6,iRobot,Braava jet m6,0,0,0,unknown,False
+0,0,False,irobot_roomba_combo_10_max_plus_autowash_dock,iRobot,Roomba Combo 10 Max + AutoWash Dock,0,0,0,unknown,False
+0,0,False,irobot_roomba_combo_i5,iRobot,Roomba Combo i5,0,0,0,unknown,False
+0,0,False,irobot_roomba_combo_i5_plus,iRobot,Roomba Combo i5+,0,0,0,unknown,False
+0,0,False,irobot_roomba_combo_j7,iRobot,Roomba Combo j7,0,0,0,unknown,False
+0,0,False,irobot_roomba_combo_j7_plus,iRobot,Roomba Combo j7+,0,0,0,unknown,False
+0,0,False,irobot_roomba_combo_j9_plus,iRobot,Roomba Combo j9+,0,0,0,unknown,False
+0,0,False,mova_p10_pro_ultra,MOVA,P10 Pro Ultra,0,0,0,unknown,False
+0,0,False,mova_p10_pro_ultra_gen2,MOVA,P10 Pro Ultra Gen2,0,0,0,unknown,False
+0,0,False,mova_p20_ultra,MOVA,P20 Ultra,0,0,0,unknown,False
+0,0,False,mova_s20_ultra,MOVA,S20 Ultra,0,0,0,unknown,False
+0,0,False,mova_v50_ultra_complete,MOVA,V50 Ultra Complete,0,0,0,unknown,False
+0,0,False,mova_z500,MOVA,Z500,0,0,0,unknown,False
+0,0,False,mova_z50_ultra,MOVA,Z50 Ultra,0,0,0,unknown,False
+0,0,False,proscenic_m6_pro,Proscenic,M6 Pro,0,0,0,unknown,False
+0,0,False,roborock_q5_max_plus,Roborock,Q5 Max+,0,0,0,unknown,False
+0,0,False,roborock_q7_max,Roborock,Q7 Max,0,0,0,unknown,False
+0,0,False,roborock_q_revo,Roborock,Q Revo,0,0,0,unknown,False
+0,0,False,roborock_qrevo_2_pro,Roborock,Qrevo 2 Pro,0,0,0,unknown,False
+0,0,False,roborock_qrevo_5ae,Roborock,Qrevo 5AE,0,0,0,unknown,False
+0,0,False,roborock_qrevo_curv,Roborock,Qrevo Curv,0,0,0,unknown,False
+0,0,False,roborock_qrevo_curv_2_flow,Roborock,Qrevo Curv 2 Flow,0,0,0,unknown,False
+0,0,False,roborock_qrevo_curv_2_pro,Roborock,Qrevo Curv 2 Pro,0,0,0,unknown,False
+0,0,False,roborock_qrevo_curv_5xc,Roborock,Qrevo Curv 5XC,0,0,0,unknown,False
+0,0,False,roborock_qrevo_curvc,Roborock,Qrevo CurvC,0,0,0,unknown,False
+0,0,False,roborock_qrevo_curvx,Roborock,Qrevo CurvX,0,0,0,unknown,False
+0,0,False,roborock_qrevo_edge,Roborock,Qrevo Edge,0,0,0,unknown,False
+0,0,False,roborock_qrevo_edge_2,Roborock,Qrevo Edge 2,0,0,0,unknown,False
+0,0,False,roborock_qrevo_edge_2_flow,Roborock,Qrevo Edge 2 Flow,0,0,0,unknown,False
+0,0,False,roborock_qrevo_edge_2_pro,Roborock,Qrevo Edge 2 Pro,0,0,0,unknown,False
+0,0,False,roborock_qrevo_edge_3_pro,Roborock,Qrevo Edge 3 Pro,0,0,0,unknown,False
+0,0,False,roborock_qrevo_edge_5v1,Roborock,Qrevo Edge 5V1,0,0,0,unknown,False
+0,0,False,roborock_qrevo_edge_s5a,Roborock,Qrevo Edge S5A,0,0,0,unknown,False
+0,0,False,roborock_qrevo_edgec,Roborock,Qrevo EdgeC,0,0,0,unknown,False
+0,0,False,roborock_qrevo_edget,Roborock,Qrevo EdgeT,0,0,0,unknown,False
+0,0,False,roborock_qrevo_master,Roborock,Qrevo Master,0,0,0,unknown,False
+0,0,False,roborock_qrevo_maxv,Roborock,Qrevo MaxV,0,0,0,unknown,False
+0,0,False,roborock_qrevo_plus,Roborock,Qrevo Plus,0,0,0,unknown,False
+2,8,False,roborock_qrevo_pro,Roborock,Qrevo Pro,0,0,0,unknown,False
+0,0,False,roborock_qrevo_s,Roborock,Qrevo S,0,0,0,unknown,False
+0,0,False,roborock_qrevo_s_pro,Roborock,Qrevo S Pro,0,0,0,unknown,False
+0,0,False,roborock_qrevo_slim,Roborock,Qrevo Slim,0,0,0,unknown,False
+0,0,False,roborock_s5,Roborock,S5,0,0,0,unknown,False
+0,0,False,roborock_s5_max,Roborock,S5 Max,0,0,0,unknown,False
+0,0,False,roborock_s6,Roborock,S6,0,0,0,unknown,False
+0,0,False,roborock_s6_pure,Roborock,S6 Pure,0,0,0,unknown,False
+0,0,False,roborock_s7,Roborock,S7,0,0,0,unknown,False
+0,0,False,roborock_s7_maxv,Roborock,S7 MaxV,0,0,0,unknown,False
+0,0,False,roborock_s7_pro_ultra,Roborock,S7 Pro Ultra,0,0,0,unknown,False
+1,3,False,roborock_s8_maxv_ultra,Roborock,S8 MaxV Ultra,0,0,0,unknown,False
+0,0,False,roborock_s8_pro_ultra,Roborock,S8 Pro Ultra,0,0,0,unknown,False
+0,0,False,roborock_saros_10,Roborock,Saros 10,0,0,0,unknown,False
+0,0,False,roborock_saros_10r,Roborock,Saros 10R,0,0,0,unknown,False
+0,0,False,roborock_saros_20,Roborock,Saros 20,0,0,0,unknown,False
+0,0,False,roborock_saros_20_flow,Roborock,Saros 20 Flow,0,0,0,unknown,False
+0,0,False,roborock_saros_20_sonic,Roborock,Saros 20 Sonic,0,0,0,unknown,False
+0,0,False,roborock_saros_z70,Roborock,Saros Z70,0,0,0,unknown,False
+0,0,False,samsung_bespoke_jet_bot_combo_steam_plus_vr7md96514g_sp,Samsung,Bespoke Jet Bot Combo Steam+ VR7MD96514G/SP,0,0,0,unknown,False
+0,0,False,samsung_bespoke_jet_bot_combo_steam_vr7md96514g_eu,Samsung,Bespoke Jet Bot Combo Steam VR7MD96514G/EU,0,0,0,unknown,False
+0,0,False,switchbot_s10,SwitchBot,S10,0,0,0,unknown,False
+0,0,False,switchbot_s20,SwitchBot,S20,0,0,0,unknown,False
+0,0,False,tapo_rv20_max,Tapo,RV20 Max,0,0,0,unknown,False
+0,0,False,tapo_rv20_max_plus,Tapo,RV20 Max Plus,0,0,0,unknown,False
+0,0,False,tapo_rv20_mop_plus,Tapo,RV20 Mop Plus,0,0,0,unknown,False
+0,0,False,tapo_rv30_max,Tapo,RV30 Max,0,0,0,unknown,False
+0,0,False,tapo_rv30_max_plus,Tapo,RV30 Max Plus,0,0,0,unknown,False
+0,0,False,tapo_rv30_max_plus_gen_2,Tapo,RV30 Max Plus Gen 2,0,0,0,unknown,False
+0,0,False,tapo_rv30_plus,Tapo,RV30 Plus,0,0,0,unknown,False
+0,0,False,tapo_rv50_omni,Tapo,RV50 Omni,0,0,0,unknown,False
+0,0,False,tapo_rv50_pro_omni,Tapo,RV50 Pro Omni,0,0,0,unknown,False
+0,0,False,viomi_se,Viomi,SE,0,0,0,unknown,False
+0,0,False,viomi_v6,Viomi,V6,0,0,0,unknown,False
+0,0,False,xiaomi_1c,Xiaomi,1C,0,0,0,unknown,False
+0,0,False,xiaomi_1t,Xiaomi,1T,0,0,0,unknown,False
+0,0,False,xiaomi_h50,Xiaomi,Robot Vacuum H50,0,0,0,unknown,False
+2,9,False,xiaomi_h50_pro,Xiaomi,Robot Vacuum H50 Pro,2,0,0,unknown,False
+0,0,False,xiaomi_p2148,Xiaomi,P2148,0,0,0,unknown,False
+0,0,False,xiaomi_robot_vacuum_5,Xiaomi,Robot Vacuum 5,0,0,0,unknown,False
+0,0,False,xiaomi_robot_vacuum_5_pro,Xiaomi,Robot Vacuum 5 Pro,0,0,0,unknown,False
+0,0,False,xiaomi_robot_vacuum_s10,Xiaomi,Robot Vacuum S10,0,0,0,unknown,False
+0,0,False,xiaomi_robot_vacuum_x10,Xiaomi,Robot Vacuum X10,0,0,0,unknown,False
+0,0,False,xiaomi_robot_vacuum_x20,Xiaomi,Robot Vacuum X20,0,0,0,unknown,False
+0,0,False,xiaomi_robot_vacuum_x20_plus,Xiaomi,Robot Vacuum X20+,0,0,0,unknown,False
+0,0,False,xiaomi_robot_vacuum_x20_pro,Xiaomi,Robot Vacuum X20 Pro,0,0,0,unknown,False
+0,0,False,xiaomi_vacuum_mop_2_ultra,Xiaomi,Vacuum-Mop 2 Ultra,0,0,0,unknown,False
+0,0,False,xiaomi_vacuum_mop_p,Xiaomi,Vacuum-Mop P,0,0,0,unknown,False
+0,0,False,xiaomi_x10_plus,Xiaomi,X10 Plus,0,0,0,unknown,False

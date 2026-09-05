@@ -1,0 +1,33 @@
+{
+  "id": "settings.roborock_s8_maxv_ultra",
+  "kind": "settings_catalog",
+  "model_id": "roborock_s8_maxv_ultra",
+  "dimensions": [
+    {
+      "name": "carpet_policy",
+      "options": [
+        "clean",
+        "skip",
+        "ignore"
+      ],
+      "ha_value_mapping_verified": false
+    }
+  ],
+  "rules": [],
+  "relationships_complete": false,
+  "confidence": "declared",
+  "unknowns": [
+    "Complete modes/routes/wash option tables",
+    "DirTect trigger telemetry",
+    "HA bindings and dynamic volume",
+    "Firmware/SKU conditions"
+  ],
+  "provenance": [
+    {
+      "url": "https://support.roborock.com/hc/en-us/articles/33954061643673-What-s-the-key-features-of-S8-MaxV-Ultra",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "Manufacturer lists carpet clean/skip/ignore preferences and DirTect adaptive changes to suction and mop-only water flow. Adaptive behavior is not an enumerated water dose."
+    }
+  ]
+}

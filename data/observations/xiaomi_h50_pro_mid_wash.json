@@ -1,0 +1,52 @@
+{
+  "id": "xiaomi_h50_pro_mid_wash",
+  "kind": "observation",
+  "context": {
+    "model_id": "xiaomi_h50_pro",
+    "sku": null,
+    "dock_variant": null,
+    "firmware": null,
+    "integration_id": null,
+    "integration_version": null,
+    "reservoir": "dock_clean",
+    "action": "mid_task_mop_wash",
+    "settings": {
+      "mop_mode": null,
+      "water_level": null,
+      "route": null,
+      "passes": null,
+      "wash_mode": null,
+      "wash_frequency": null,
+      "wash_temperature": null,
+      "adaptive_mode": null,
+      "detergent_mode": null,
+      "cleaning_mode": null,
+      "task_scope": null,
+      "suction_level": null,
+      "carpet_policy": null
+    }
+  },
+  "quantity": {
+    "value": 120,
+    "unit": "ml/action"
+  },
+  "source_class": "manufacturer_declaration",
+  "sample_count": 0,
+  "measurement": null,
+  "runtime_eligible": false,
+  "provenance": [
+    {
+      "url": "https://www.mi.com/global/support/faq/details/KA-673648/",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "FAQ Q62 gives 120 ml for each mid-task mop cleaning."
+    }
+  ],
+  "confidence": "declared",
+  "unknowns": [
+    "Wash intensity and firmware applicability",
+    "HA event identification",
+    "Whether robot refill is included",
+    "Independent validation"
+  ]
+}

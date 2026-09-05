@@ -1,0 +1,24 @@
+{
+  "id": "integration.xiaomi_miot",
+  "kind": "integration",
+  "version": null,
+  "official": false,
+  "supported_model_ids": [],
+  "signal_contracts": [],
+  "hardware_verified": false,
+  "provenance": [
+    {
+      "url": "https://github.com/al-one/hass-xiaomi-miot",
+      "date": "2026-09-05",
+      "type": "integration_code",
+      "claim": "snapshot accessed 2026-09-05; upstream not pinned; inventory only, no hardware verification."
+    }
+  ],
+  "confidence": "unknown",
+  "unknowns": [
+    "Per-model firmware and regional signal presence",
+    "Minimum supported upstream version not established",
+    "No sanitized real hardware fixture",
+    "Model-specific bindings require review"
+  ]
+}

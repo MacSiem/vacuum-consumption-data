@@ -1,0 +1,182 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "model_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+    },
+    "sku": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "dock_variant": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "firmware": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "integration_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "integration_version": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "reservoir": {
+      "enum": [
+        "dock_clean",
+        "dock_dirty",
+        "robot_clean",
+        "robot_dirty",
+        "detergent"
+      ]
+    },
+    "action": {
+      "type": "string",
+      "minLength": 1
+    },
+    "settings": {
+      "type": "object",
+      "properties": {
+        "mop_mode": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "water_level": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "route": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "passes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "wash_mode": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "wash_frequency": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "wash_temperature": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "adaptive_mode": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "detergent_mode": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "cleaning_mode": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "task_scope": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "suction_level": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "carpet_policy": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "mop_mode",
+        "water_level",
+        "route",
+        "passes",
+        "wash_mode",
+        "wash_frequency",
+        "wash_temperature",
+        "adaptive_mode",
+        "detergent_mode",
+        "cleaning_mode",
+        "task_scope",
+        "suction_level",
+        "carpet_policy"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "model_id",
+    "sku",
+    "dock_variant",
+    "firmware",
+    "integration_id",
+    "integration_version",
+    "reservoir",
+    "action",
+    "settings"
+  ],
+  "additionalProperties": false
+}

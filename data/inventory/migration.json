@@ -1,0 +1,14 @@
+{
+  "source_repository": "MacSiem/ha-vacuum-water-monitor",
+  "source_base_commit": "66594c4",
+  "source_state": "uncommitted_reviewed_research",
+  "date": "2026-09-05",
+  "observation_id_mapping": {
+    "xiaomi_h50_pro_first_wash": "xiaomi_h50_pro_first_wash",
+    "xiaomi_h50_pro_mid_wash": "xiaomi_h50_pro_mid_wash",
+    "concept_vr4050_wash_standard": "concept_vr4050_wash_standard",
+    "concept_vr4050_wash_deep": "concept_vr4050_wash_deep"
+  },
+  "models_imported": 134,
+  "global_inventory_complete": false
+}

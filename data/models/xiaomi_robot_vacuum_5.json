@@ -1,0 +1,40 @@
+{
+  "id": "xiaomi_robot_vacuum_5",
+  "kind": "model",
+  "manufacturer": "Xiaomi",
+  "name": "Robot Vacuum 5",
+  "public_model_ids": [],
+  "regional_skus": [],
+  "integration_candidates": [
+    "xiaomi_home",
+    "xiaomi_miot",
+    "xiaomi_miio"
+  ],
+  "reservoirs_ml": {
+    "dock_clean": 4000,
+    "dock_dirty": null,
+    "robot_clean": null,
+    "robot_dirty": null,
+    "detergent": null
+  },
+  "inventory_status": "researched_partial",
+  "provenance": [
+    {
+      "url": "https://www.mi.com/global/product/xiaomi-robot-vacuum-5/",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "Root confirmed capacities (ml): dock_clean=4000; no consumption claim."
+    }
+  ],
+  "confidence": "declared",
+  "unknowns": [
+    "Regional hardware equivalence and exact retail SKU unknown",
+    "Firmware-specific HA feature presence unverified",
+    "All consumption rates and wash volumes unmeasured",
+    "Reservoir null means unknown, not zero or absent",
+    "Unknown dock_dirty capacity",
+    "Unknown robot_clean capacity",
+    "Unknown robot_dirty capacity",
+    "Unknown detergent capacity"
+  ]
+}

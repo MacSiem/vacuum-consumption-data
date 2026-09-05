@@ -1,0 +1,46 @@
+{
+  "id": "dreame_l10s_ultra",
+  "kind": "model",
+  "manufacturer": "Dreame",
+  "name": "L10s Ultra",
+  "public_model_ids": [],
+  "regional_skus": [],
+  "integration_candidates": [
+    "dreame_vacuum",
+    "valetudo"
+  ],
+  "reservoirs_ml": {
+    "dock_clean": null,
+    "dock_dirty": null,
+    "robot_clean": null,
+    "robot_dirty": null,
+    "detergent": null
+  },
+  "inventory_status": "researched_partial",
+  "provenance": [
+    {
+      "url": "https://www.dreametech.com/products/dreamebot-l10s-ultra?gQT=1",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "Model/reference source; reservoir values only adopted where separately confirmed in root review."
+    },
+    {
+      "url": "https://valetudo.cloud/pages/general/supported-robots/",
+      "date": "2026-09-05",
+      "type": "integration_code",
+      "claim": "Named model in reviewed source; unknown values are not compatibility or capacity claims."
+    }
+  ],
+  "confidence": "unknown",
+  "unknowns": [
+    "Regional hardware equivalence and exact retail SKU unknown",
+    "Firmware-specific HA feature presence unverified",
+    "All consumption rates and wash volumes unmeasured",
+    "Reservoir null means unknown, not zero or absent",
+    "Unknown dock_clean capacity",
+    "Unknown dock_dirty capacity",
+    "Unknown robot_clean capacity",
+    "Unknown robot_dirty capacity",
+    "Unknown detergent capacity"
+  ]
+}

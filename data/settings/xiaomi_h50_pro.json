@@ -1,0 +1,49 @@
+{
+  "id": "settings.xiaomi_h50_pro",
+  "kind": "settings_catalog",
+  "model_id": "xiaomi_h50_pro",
+  "dimensions": [
+    {
+      "name": "cleaning_mode",
+      "options": [
+        "vacuum_only",
+        "mop_only",
+        "vacuum_and_mop"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "wash_frequency",
+      "options": [
+        "5_m2",
+        "8_m2",
+        "10_m2",
+        "5_minutes",
+        "8_minutes",
+        "10_minutes"
+      ],
+      "ha_value_mapping_verified": false
+    }
+  ],
+  "rules": [],
+  "relationships_complete": false,
+  "confidence": "declared",
+  "unknowns": [
+    "HA enum mapping and marketing-to-protocol identity",
+    "Selectable route options versus default zigzag behavior",
+    "Water intensity options",
+    "Sequential vacuum-then-mop availability",
+    "Pass counts available per room",
+    "Wash mode/temperature dependencies",
+    "Actual floor volume per mode",
+    "Per-room setting transitions and firmware applicability"
+  ],
+  "provenance": [
+    {
+      "url": "https://www.mi.com/global/support/faq/details/KA-673648/",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "FAQ Q26/Q40: mop-only and vacuum-and-mop pre-wet, return by 5/8/10 m\u00b2 or minutes, post-task wash. App Q18 describes per-room mode/pass configuration without full values. Vacuum-only is also documented."
+    }
+  ]
+}

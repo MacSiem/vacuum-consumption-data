@@ -1,0 +1,38 @@
+{
+  "id": "roborock_s8_maxv_ultra",
+  "kind": "model",
+  "manufacturer": "Roborock",
+  "name": "S8 MaxV Ultra",
+  "public_model_ids": [],
+  "regional_skus": [],
+  "integration_candidates": [
+    "roborock",
+    "xiaomi_miio"
+  ],
+  "reservoirs_ml": {
+    "dock_clean": 4000,
+    "dock_dirty": null,
+    "robot_clean": 100,
+    "robot_dirty": null,
+    "detergent": null
+  },
+  "inventory_status": "researched_partial",
+  "provenance": [
+    {
+      "url": "https://support.roborock.com/hc/en-us/articles/33954114436761-What-is-the-difference-among-of-S8-Pro-Ultra-S8-Max-Ultra-and-S8-MaxV-Ultra",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "Root confirmed capacities (ml): dock_clean=4000, robot_clean=100; no consumption claim."
+    }
+  ],
+  "confidence": "declared",
+  "unknowns": [
+    "Regional hardware equivalence and exact retail SKU unknown",
+    "Firmware-specific HA feature presence unverified",
+    "All consumption rates and wash volumes unmeasured",
+    "Reservoir null means unknown, not zero or absent",
+    "Unknown dock_dirty capacity",
+    "Unknown robot_dirty capacity",
+    "Unknown detergent capacity"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "tapo_rv50_pro_omni",
+  "kind": "model",
+  "manufacturer": "Tapo",
+  "name": "RV50 Pro Omni",
+  "public_model_ids": [
+    "1797"
+  ],
+  "regional_skus": [],
+  "integration_candidates": [
+    "tplink",
+    "matter"
+  ],
+  "reservoirs_ml": {
+    "dock_clean": 5000,
+    "dock_dirty": 4000,
+    "robot_clean": 95,
+    "robot_dirty": null,
+    "detergent": null
+  },
+  "inventory_status": "researched_partial",
+  "provenance": [
+    {
+      "url": "https://www.tapo.com/us/product/robot-vacuum/tapo-rv50-pro-omni/",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "Root confirmed capacities (ml): dock_clean=5000, dock_dirty=4000, robot_clean=95; no consumption claim."
+    },
+    {
+      "url": "https://github.com/MacSiem/ha-vacuum-water-monitor/issues/10",
+      "date": "2026-09-05",
+      "type": "integration_code",
+      "claim": "Reporter supplied model identifier; not manufacturer capacity evidence."
+    }
+  ],
+  "confidence": "declared",
+  "unknowns": [
+    "Regional hardware equivalence and exact retail SKU unknown",
+    "Firmware-specific HA feature presence unverified",
+    "All consumption rates and wash volumes unmeasured",
+    "Reservoir null means unknown, not zero or absent",
+    "Unknown robot_dirty capacity",
+    "Unknown detergent capacity"
+  ]
+}

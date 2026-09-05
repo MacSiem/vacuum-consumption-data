@@ -1,0 +1,24 @@
+{
+  "id": "integration.tplink",
+  "kind": "integration",
+  "version": "2026.9.0",
+  "official": true,
+  "supported_model_ids": [],
+  "signal_contracts": [],
+  "hardware_verified": false,
+  "provenance": [
+    {
+      "url": "https://github.com/home-assistant/core/tree/2026.9.0/homeassistant/components/tplink",
+      "date": "2026-09-05",
+      "type": "integration_code",
+      "claim": "HA Core 2026.9.0; inventory only, no hardware verification."
+    }
+  ],
+  "confidence": "unknown",
+  "unknowns": [
+    "Per-model firmware and regional signal presence",
+    "Minimum supported upstream version not established",
+    "No sanitized real hardware fixture",
+    "Model-specific bindings require review"
+  ]
+}

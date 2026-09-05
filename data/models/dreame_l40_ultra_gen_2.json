@@ -1,0 +1,43 @@
+{
+  "id": "dreame_l40_ultra_gen_2",
+  "kind": "model",
+  "manufacturer": "Dreame",
+  "name": "L40 Ultra Gen 2",
+  "public_model_ids": [],
+  "regional_skus": [],
+  "integration_candidates": [
+    "dreame_vacuum"
+  ],
+  "reservoirs_ml": {
+    "dock_clean": 4500,
+    "dock_dirty": 4000,
+    "robot_clean": null,
+    "robot_dirty": null,
+    "detergent": null
+  },
+  "inventory_status": "researched_partial",
+  "provenance": [
+    {
+      "url": "https://www.dreametech.com/products/l40-ultra-gen2-robot-vacuum",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "Root confirmed capacities (ml): dock_clean=4500, dock_dirty=4000; no consumption claim."
+    },
+    {
+      "url": "https://github.com/Tasshack/dreame-vacuum/blob/master/docs/events.md",
+      "date": "2026-09-05",
+      "type": "integration_code",
+      "claim": "Model/reference source; reservoir values only adopted where separately confirmed in root review."
+    }
+  ],
+  "confidence": "declared",
+  "unknowns": [
+    "Regional hardware equivalence and exact retail SKU unknown",
+    "Firmware-specific HA feature presence unverified",
+    "All consumption rates and wash volumes unmeasured",
+    "Reservoir null means unknown, not zero or absent",
+    "Unknown robot_clean capacity",
+    "Unknown robot_dirty capacity",
+    "Unknown detergent capacity"
+  ]
+}

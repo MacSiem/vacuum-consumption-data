@@ -1,0 +1,390 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+    },
+    "kind": {
+      "const": "profile"
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "type": {
+            "enum": [
+              "manufacturer",
+              "integration_code",
+              "public_protocol",
+              "empirical",
+              "synthetic"
+            ]
+          },
+          "claim": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "url",
+          "date",
+          "type",
+          "claim"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "confidence": {
+      "enum": [
+        "unknown",
+        "declared",
+        "measured",
+        "validated",
+        "synthetic"
+      ]
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "context": {
+      "type": "object",
+      "properties": {
+        "model_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+        },
+        "sku": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "dock_variant": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "firmware": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "integration_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "integration_version": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "reservoir": {
+          "enum": [
+            "dock_clean",
+            "dock_dirty",
+            "robot_clean",
+            "robot_dirty",
+            "detergent"
+          ]
+        },
+        "action": {
+          "type": "string",
+          "minLength": 1
+        },
+        "settings": {
+          "type": "object",
+          "properties": {
+            "mop_mode": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "water_level": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "route": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "passes": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "wash_mode": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "wash_frequency": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "wash_temperature": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "adaptive_mode": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "detergent_mode": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "cleaning_mode": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "task_scope": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "suction_level": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "carpet_policy": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            }
+          },
+          "required": [
+            "mop_mode",
+            "water_level",
+            "route",
+            "passes",
+            "wash_mode",
+            "wash_frequency",
+            "wash_temperature",
+            "adaptive_mode",
+            "detergent_mode",
+            "cleaning_mode",
+            "task_scope",
+            "suction_level",
+            "carpet_policy"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "model_id",
+        "sku",
+        "dock_variant",
+        "firmware",
+        "integration_id",
+        "integration_version",
+        "reservoir",
+        "action",
+        "settings"
+      ],
+      "additionalProperties": false
+    },
+    "method": {
+      "enum": [
+        "area",
+        "time",
+        "action",
+        "whole_cycle"
+      ]
+    },
+    "coefficient": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "unit": {
+      "enum": [
+        "ml/m2",
+        "ml/min",
+        "ml/action",
+        "ml/cycle"
+      ]
+    },
+    "scope": {
+      "enum": [
+        "floor_only",
+        "wash_only",
+        "whole_cycle"
+      ]
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+      },
+      "minItems": 1
+    },
+    "review": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "experimental",
+            "approved",
+            "revoked"
+          ]
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "status",
+        "reviewer"
+      ],
+      "additionalProperties": false
+    },
+    "validation": {
+      "type": "object",
+      "properties": {
+        "training_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+          },
+          "minItems": 0
+        },
+        "validation_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+          },
+          "minItems": 0
+        },
+        "device_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "max_error_ml": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "max_relative_error": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "required": [
+        "training_ids",
+        "validation_ids",
+        "device_count",
+        "max_error_ml",
+        "max_relative_error"
+      ],
+      "additionalProperties": false
+    },
+    "exposure_domain": {
+      "type": "object",
+      "properties": {
+        "min": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "max": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": [
+        "min",
+        "max"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "id",
+    "kind",
+    "provenance",
+    "confidence",
+    "unknowns",
+    "context",
+    "method",
+    "coefficient",
+    "unit",
+    "scope",
+    "evidence_ids",
+    "review",
+    "validation",
+    "exposure_domain"
+  ],
+  "additionalProperties": false
+}

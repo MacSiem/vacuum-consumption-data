@@ -1,0 +1,36 @@
+{
+  "id": "samsung_bespoke_jet_bot_combo_steam_plus_vr7md96514g_sp",
+  "kind": "model",
+  "manufacturer": "Samsung",
+  "name": "Bespoke Jet Bot Combo Steam+ VR7MD96514G/SP",
+  "public_model_ids": [],
+  "regional_skus": [
+    "VR7MD96514G/SP"
+  ],
+  "integration_candidates": [
+    "smartthings"
+  ],
+  "reservoirs_ml": {
+    "dock_clean": 4000,
+    "dock_dirty": 3600,
+    "robot_clean": null,
+    "robot_dirty": null,
+    "detergent": null
+  },
+  "inventory_status": "researched_partial",
+  "provenance": [
+    {
+      "url": "https://news.samsung.com/sg/samsung-sets-new-standards-for-cleanliness-and-hygiene-with-the-new-bespoke-jet-bot-combo",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "Confirmed reservoir capacity (ml): {'dock_clean': 4000, 'dock_dirty': 3600}; consumption unmeasured."
+    }
+  ],
+  "confidence": "declared",
+  "unknowns": [
+    "Exact HA model identifier and firmware signal presence unverified",
+    "Regional SKU equivalence unverified",
+    "Consumption and wash rates unmeasured",
+    "Null reservoir capacities mean unknown, not absent"
+  ]
+}

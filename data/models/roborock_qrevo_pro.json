@@ -1,0 +1,40 @@
+{
+  "id": "roborock_qrevo_pro",
+  "kind": "model",
+  "manufacturer": "Roborock",
+  "name": "Qrevo Pro",
+  "public_model_ids": [],
+  "regional_skus": [],
+  "integration_candidates": [
+    "roborock",
+    "xiaomi_miio"
+  ],
+  "reservoirs_ml": {
+    "dock_clean": null,
+    "dock_dirty": null,
+    "robot_clean": null,
+    "robot_dirty": null,
+    "detergent": null
+  },
+  "inventory_status": "researched_partial",
+  "provenance": [
+    {
+      "url": "https://global.roborock.com/pages/roborock-qrevo-series",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "Model/reference source; reservoir values only adopted where separately confirmed in root review."
+    }
+  ],
+  "confidence": "unknown",
+  "unknowns": [
+    "Regional hardware equivalence and exact retail SKU unknown",
+    "Firmware-specific HA feature presence unverified",
+    "All consumption rates and wash volumes unmeasured",
+    "Reservoir null means unknown, not zero or absent",
+    "Unknown dock_clean capacity",
+    "Unknown dock_dirty capacity",
+    "Unknown robot_clean capacity",
+    "Unknown robot_dirty capacity",
+    "Unknown detergent capacity"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "eureka_j12_ultra",
+  "kind": "model",
+  "manufacturer": "Eureka",
+  "name": "J12 Ultra",
+  "public_model_ids": [],
+  "regional_skus": [],
+  "integration_candidates": [
+    "valetudo"
+  ],
+  "reservoirs_ml": {
+    "dock_clean": null,
+    "dock_dirty": null,
+    "robot_clean": null,
+    "robot_dirty": null,
+    "detergent": null
+  },
+  "inventory_status": "researched_partial",
+  "provenance": [
+    {
+      "url": "https://valetudo.cloud/pages/general/supported-robots/",
+      "date": "2026-09-05",
+      "type": "integration_code",
+      "claim": "Named model in reviewed source; unknown values are not compatibility or capacity claims."
+    }
+  ],
+  "confidence": "unknown",
+  "unknowns": [
+    "Exact HA model identifier and firmware signal presence unverified",
+    "Regional SKU equivalence unverified",
+    "Consumption and wash rates unmeasured",
+    "Null reservoir capacities mean unknown, not absent"
+  ]
+}

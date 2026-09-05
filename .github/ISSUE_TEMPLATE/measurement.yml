@@ -1,0 +1,31 @@
+name: Measurement
+description: Submit a consented measurement for a specific model and setting
+body:
+  - type: markdown
+    attributes:
+      value: "Do not attach raw Diagnostics, maps, serial numbers, tokens or household identifiers."
+  - type: textarea
+    id: context
+    attributes:
+      label: Model, SKU, firmware, integration, action and settings
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Source URL or consented measurement and instrument resolution
+    validations:
+      required: true
+  - type: textarea
+    id: unknowns
+    attributes:
+      label: Unknowns and limitations
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Sharing
+      options:
+        - label: I can share this information under the contribution terms and checked it for private data.
+          required: true

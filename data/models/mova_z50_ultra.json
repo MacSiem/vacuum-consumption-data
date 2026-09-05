@@ -1,0 +1,37 @@
+{
+  "id": "mova_z50_ultra",
+  "kind": "model",
+  "manufacturer": "MOVA",
+  "name": "Z50 Ultra",
+  "public_model_ids": [],
+  "regional_skus": [],
+  "integration_candidates": [
+    "dreame_vacuum"
+  ],
+  "reservoirs_ml": {
+    "dock_clean": 4500,
+    "dock_dirty": 4000,
+    "robot_clean": null,
+    "robot_dirty": null,
+    "detergent": null
+  },
+  "inventory_status": "researched_partial",
+  "provenance": [
+    {
+      "url": "https://www.mova.tech/products/mova-z50-ultra-robot-vacuum",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "Root confirmed capacities (ml): dock_clean=4500, dock_dirty=4000; no consumption claim."
+    }
+  ],
+  "confidence": "declared",
+  "unknowns": [
+    "Regional hardware equivalence and exact retail SKU unknown",
+    "Firmware-specific HA feature presence unverified",
+    "All consumption rates and wash volumes unmeasured",
+    "Reservoir null means unknown, not zero or absent",
+    "Unknown robot_clean capacity",
+    "Unknown robot_dirty capacity",
+    "Unknown detergent capacity"
+  ]
+}

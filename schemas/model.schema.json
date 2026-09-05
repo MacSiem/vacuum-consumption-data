@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+    },
+    "kind": {
+      "const": "model"
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "type": {
+            "enum": [
+              "manufacturer",
+              "integration_code",
+              "public_protocol",
+              "empirical",
+              "synthetic"
+            ]
+          },
+          "claim": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "url",
+          "date",
+          "type",
+          "claim"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "confidence": {
+      "enum": [
+        "unknown",
+        "declared",
+        "measured",
+        "validated",
+        "synthetic"
+      ]
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "manufacturer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "public_model_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "regional_skus": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "integration_candidates": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "reservoirs_ml": {
+      "type": "object",
+      "properties": {
+        "dock_clean": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "dock_dirty": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "robot_clean": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "robot_dirty": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "detergent": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": [
+        "dock_clean",
+        "dock_dirty",
+        "robot_clean",
+        "robot_dirty",
+        "detergent"
+      ],
+      "additionalProperties": false
+    },
+    "inventory_status": {
+      "enum": [
+        "researched_partial",
+        "verified_retail",
+        "unknown"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "kind",
+    "provenance",
+    "confidence",
+    "unknowns",
+    "manufacturer",
+    "name",
+    "public_model_ids",
+    "regional_skus",
+    "integration_candidates",
+    "reservoirs_ml",
+    "inventory_status"
+  ],
+  "additionalProperties": false
+}

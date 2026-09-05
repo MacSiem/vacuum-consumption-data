@@ -1,0 +1,22 @@
+{
+  "id": "integration.sharkiq",
+  "kind": "integration",
+  "version": "2026.9.0",
+  "official": true,
+  "supported_model_ids": [],
+  "signal_contracts": [],
+  "hardware_verified": false,
+  "provenance": [
+    {
+      "url": "https://github.com/home-assistant/core/tree/2026.9.0/homeassistant/components/sharkiq",
+      "date": "2026-09-05",
+      "type": "integration_code",
+      "claim": "HA Core 2026.9.0; inventory only, no hardware verification."
+    }
+  ],
+  "confidence": "unknown",
+  "unknowns": [
+    "No canonical water-role mapping; manual configuration requires measured calibration",
+    "Model-specific bindings require review"
+  ]
+}

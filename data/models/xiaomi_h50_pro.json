@@ -1,0 +1,45 @@
+{
+  "id": "xiaomi_h50_pro",
+  "kind": "model",
+  "manufacturer": "Xiaomi",
+  "name": "Robot Vacuum H50 Pro",
+  "public_model_ids": [],
+  "regional_skus": [],
+  "integration_candidates": [
+    "xiaomi_home",
+    "xiaomi_miot",
+    "xiaomi_miio"
+  ],
+  "reservoirs_ml": {
+    "dock_clean": 4000,
+    "dock_dirty": 4000,
+    "robot_clean": null,
+    "robot_dirty": null,
+    "detergent": null
+  },
+  "inventory_status": "researched_partial",
+  "provenance": [
+    {
+      "url": "https://www.mi.com/global/product/xiaomi-robot-vacuum-h50-pro/",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "Root confirmed capacities (ml): dock_clean=4000; no consumption claim."
+    },
+    {
+      "url": "https://www.mi.com/global/support/faq/details/KA-673648/",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "FAQ Q61: clean and dirty station tanks each 4 L. Q62 action quantities are separately recorded in docs/consumption-evidence.json; not a universal wash rate."
+    }
+  ],
+  "confidence": "declared",
+  "unknowns": [
+    "Regional hardware equivalence and exact retail SKU unknown",
+    "Firmware-specific HA feature presence unverified",
+    "All consumption rates and wash volumes unmeasured",
+    "Reservoir null means unknown, not zero or absent",
+    "Unknown robot_clean capacity",
+    "Unknown robot_dirty capacity",
+    "Unknown detergent capacity"
+  ]
+}

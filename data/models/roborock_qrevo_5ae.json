@@ -1,0 +1,46 @@
+{
+  "id": "roborock_qrevo_5ae",
+  "kind": "model",
+  "manufacturer": "Roborock",
+  "name": "Qrevo 5AE",
+  "public_model_ids": [
+    "a170",
+    "roborock.vacuum.a170"
+  ],
+  "regional_skus": [],
+  "integration_candidates": [
+    "roborock",
+    "xiaomi_miio"
+  ],
+  "reservoirs_ml": {
+    "dock_clean": 4000,
+    "dock_dirty": 3500,
+    "robot_clean": 80,
+    "robot_dirty": null,
+    "detergent": null
+  },
+  "inventory_status": "researched_partial",
+  "provenance": [
+    {
+      "url": "https://www.roborock.sg/products/roborock-qrevo-5ae-white-certified-refurbished",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "Root confirmed capacities (ml): dock_clean=4000, dock_dirty=3500, robot_clean=80; no consumption claim."
+    },
+    {
+      "url": "https://github.com/MacSiem/ha-vacuum-water-monitor/issues/12",
+      "date": "2026-09-05",
+      "type": "integration_code",
+      "claim": "Reporter supplied model identifier; not manufacturer capacity evidence."
+    }
+  ],
+  "confidence": "declared",
+  "unknowns": [
+    "Regional hardware equivalence and exact retail SKU unknown",
+    "Firmware-specific HA feature presence unverified",
+    "All consumption rates and wash volumes unmeasured",
+    "Reservoir null means unknown, not zero or absent",
+    "Unknown robot_dirty capacity",
+    "Unknown detergent capacity"
+  ]
+}

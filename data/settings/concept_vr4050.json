@@ -1,0 +1,61 @@
+{
+  "id": "settings.concept_vr4050",
+  "kind": "settings_catalog",
+  "model_id": "concept_vr4050",
+  "dimensions": [
+    {
+      "name": "cleaning_mode",
+      "options": [
+        "vacuum_only",
+        "mop_only",
+        "vacuum_then_mop",
+        "vacuum_and_mop"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "water_level",
+      "options": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "wash_mode",
+      "options": [
+        "standard",
+        "deep"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "wash_frequency",
+      "options": [
+        "10_minutes",
+        "15_minutes",
+        "20_minutes"
+      ],
+      "ha_value_mapping_verified": false
+    }
+  ],
+  "rules": [],
+  "relationships_complete": false,
+  "confidence": "declared",
+  "unknowns": [
+    "HA codes and exposure",
+    "Route/cross-clean interactions",
+    "Allowed combinations and restrictions",
+    "Area-dependent changes and floor dose",
+    "Firmware/SKU equivalence"
+  ],
+  "provenance": [
+    {
+      "url": "https://www.my-concept.sk/img.asp?attid=56409021",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "Printed manual pages 100\u2013101 list four cleaning modes, three water levels, two wash modes and three return intervals. Their Cartesian product is not verified."
+    }
+  ]
+}

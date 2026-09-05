@@ -1,0 +1,51 @@
+{
+  "id": "settings.eufy_x10_pro_omni",
+  "kind": "settings_catalog",
+  "model_id": "eufy_x10_pro_omni",
+  "dimensions": [
+    {
+      "name": "task_scope",
+      "options": [
+        "home",
+        "room",
+        "zone",
+        "spot"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "suction_level",
+      "options": [
+        "quiet",
+        "standard",
+        "turbo",
+        "max"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "cleaning_mode",
+      "options": [
+        "vacuum_and_mop"
+      ],
+      "ha_value_mapping_verified": false
+    }
+  ],
+  "rules": [],
+  "relationships_complete": false,
+  "confidence": "declared",
+  "unknowns": [
+    "Other vacuum/mop mode choices not confirmed by consulted text",
+    "Water level labels and HA enum values",
+    "Wash frequency/temperature and passes",
+    "Allowed setting combinations and firmware applicability"
+  ],
+  "provenance": [
+    {
+      "url": "https://service.eufy.com/article-description/X10-Pro-Omni-T2351-EN-Manual",
+      "date": "2026-09-05",
+      "type": "manufacturer",
+      "claim": "Manual sections 3.5/3.6/4 list task scopes, suction settings and automatic vacuum-and-mop. Three water levels are stated without text labels. Home cleaning uses edges then Z-shaped path; not proof of a selectable route."
+    }
+  ]
+}
