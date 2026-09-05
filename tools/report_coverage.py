@@ -19,5 +19,5 @@ if __name__=='__main__':
     data=report(load_records());folder=ROOT/'reports';folder.mkdir(exist_ok=True)
     (folder/'coverage.json').write_text(json.dumps(data,indent=2)+'\n')
     with (folder/'coverage.csv').open('w',newline='') as f:
-        writer=csv.DictWriter(f,fieldnames=list(data['models'][0]));writer.writeheader();writer.writerows(data['models'])
+        writer=csv.DictWriter(f,fieldnames=list(data['models'][0]),lineterminator='\n');writer.writeheader();writer.writerows(data['models'])
     print(json.dumps({'models':len(data['models']),'goal_complete':False}))
