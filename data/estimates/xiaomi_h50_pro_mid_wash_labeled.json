@@ -1,0 +1,17 @@
+{
+  "id": "xiaomi_h50_pro_mid_wash_labeled",
+  "kind": "estimate",
+  "source_type": "manufacturer_declaration",
+  "estimate_readiness": "labeled_runtime_estimate",
+  "basis_kind": "manufacturer_declared_quantity",
+  "basis_ids": ["xiaomi_h50_pro_mid_wash"],
+  "confidence": "declared_source_limited",
+  "label": "Manufacturer-declared, limited estimate",
+  "limitations": ["Not a physical measurement or approved profile", "SKU, firmware and Home Assistant action binding are unknown", "Applies only to the named model/action; it does not prove a family or capacity-derived rate"],
+  "quantity": {"value": 120, "unit": "ml/action"},
+  "method": "Use the declared mid-task mop-wash quantity only when the action is explicitly identified.",
+  "applicability": {"model_scope": "named_model", "sku_scope": "unknown", "firmware_scope": "unknown"},
+  "context": {"model_id": "xiaomi_h50_pro", "sku": null, "dock_variant": null, "firmware": null, "integration_id": null, "integration_version": null, "reservoir": "dock_clean", "action": "mid_task_mop_wash", "settings": {"mop_mode": null, "water_level": null, "route": null, "passes": null, "wash_mode": null, "wash_frequency": null, "wash_temperature": null, "adaptive_mode": null, "detergent_mode": null, "cleaning_mode": null, "task_scope": null, "suction_level": null, "carpet_policy": null}},
+  "provenance": [{"url": "https://www.mi.com/global/support/faq/details/KA-673648/", "date": "2026-09-05", "type": "manufacturer", "claim": "Derived label preserves the public declaration of 120 ml for each mid-task mop cleaning."}],
+  "unknowns": ["Independent validation", "Exact SKU/firmware", "Completion-counter binding"]
+}

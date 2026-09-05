@@ -1,0 +1,998 @@
+{
+  "schema_version": 2,
+  "report_type": "public_source_inventory_v2",
+  "researched_at": "2026-09-05",
+  "cutoff_date": "2026-09-05",
+  "scope": "all 356 unresolved MIoT records; H50/Qrevo/X8 excluded",
+  "protocol_denominator": 356,
+  "input_inventory_sha256": "00a72dc5f2981db700ea6c3d70d549d8bfde0b7e4b55e754cfc46e773e60937d",
+  "previous_report_sha256": "9327f60edee1fd699b26c20c917cb277ca4a7986ddb7e2a6d8b33c2d72ebdd8e",
+  "global_inventory_complete": false,
+  "retail_denominator": "unknown",
+  "alias_family_method": {
+    "group_key": "namespace:<literal first protocol segment>",
+    "normalization": "lowercase exact token; no suffix collapse",
+    "cross_namespace_aliases": false,
+    "reason": "no equivalence inheritance without primary proof"
+  },
+  "sources": [
+    {
+      "id": "xiaomi-global-mi-robot",
+      "url": "https://www.mi.com/global/support/article/KA-07583/",
+      "accessed": "2026-09-05",
+      "authority": "manufacturer",
+      "claim": "Xiaomi identifies SDJQR01RR and says no mopping; not a mapping for all xiaomi/miot/mijia IDs.",
+      "claim_sha256": "99e004bd5fe2ca75d71548e49f16d3c3485bb9b9831338f079211a3dcfb7fec0",
+      "raw_source_sha256": null,
+      "raw_hash_status": "raw_source_unavailable_from_browser_capture"
+    },
+    {
+      "id": "xiaomi-5-pro",
+      "url": "https://www.mi.com/global/product/xiaomi-robot-vacuum-5-pro/",
+      "accessed": "2026-09-05",
+      "authority": "manufacturer",
+      "claim": "Xiaomi documents extendable mop/self-cleaning dock; no MIoT ID or exact firmware.",
+      "claim_sha256": "e14c2e57faa1015f9d66fbda28d3a5c195cffc92a5099399c422f630a878e087",
+      "raw_source_sha256": null,
+      "raw_hash_status": "raw_source_unavailable_from_browser_capture"
+    },
+    {
+      "id": "ecovacs-n10-uk",
+      "url": "https://www.ecovacs.com/uk/shop/deebot-robotic-vacuum-cleaner/n10",
+      "accessed": "2026-09-05",
+      "authority": "manufacturer",
+      "claim": "ECOVACS N10 documents mop, four water-flow levels and 240 ml; no eco crosswalk.",
+      "claim_sha256": "eeaf3d42fb346775cf7460d56b3d5a18b65ec7c0b9d95099b878833ecbb779a6",
+      "raw_source_sha256": null,
+      "raw_hash_status": "raw_source_unavailable_from_browser_capture"
+    },
+    {
+      "id": "ecovacs-t20-us",
+      "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t20-omni",
+      "accessed": "2026-09-05",
+      "authority": "manufacturer",
+      "claim": "ECOVACS T20 documents mop, three water levels, lift and 4 L station; no exact MIoT binding.",
+      "claim_sha256": "c4a5a724bb270450194ab0b5dbf3756eeeff7bc698e50bb12fc268f3a3010570",
+      "raw_source_sha256": null,
+      "raw_hash_status": "raw_source_unavailable_from_browser_capture"
+    },
+    {
+      "id": "yeedi-products",
+      "url": "https://www.yeedi.com/collections/all",
+      "accessed": "2026-09-05",
+      "authority": "manufacturer",
+      "claim": "YEEDI lists robot vacuum/mop products; no protocol crosswalk.",
+      "claim_sha256": "e03d16f6337c37ac7b24895143697a0d038d668c18aad1237a37bea0376be1c9",
+      "raw_source_sha256": null,
+      "raw_hash_status": "raw_source_unavailable_from_browser_capture"
+    },
+    {
+      "id": "narwal-freo-series",
+      "url": "https://us.narwal.com/collections/freo-series",
+      "accessed": "2026-09-05",
+      "authority": "manufacturer",
+      "claim": "Narwal lists Freo vacuum/mop models; no MIoT crosswalk.",
+      "claim_sha256": "13112b523579e273048bb302ba448151029f82411120e87528d43d681d30b575",
+      "raw_source_sha256": null,
+      "raw_hash_status": "raw_source_unavailable_from_browser_capture"
+    },
+    {
+      "id": "deerma-global",
+      "url": "https://www.deerma.com/us?region=us",
+      "accessed": "2026-09-05",
+      "authority": "manufacturer",
+      "claim": "Deerma exposes robot-vacuum category; no exact protocol/SKU match.",
+      "claim_sha256": "920933e4da4d7ede54e971f48f64be6b289bd3f7117a34b66299d50f77cfbece",
+      "raw_source_sha256": null,
+      "raw_hash_status": "raw_source_unavailable_from_browser_capture"
+    },
+    {
+      "id": "roidmi-global",
+      "url": "https://www.roidmi.com/",
+      "accessed": "2026-09-05",
+      "authority": "manufacturer",
+      "claim": "ROIDMI lists robot vacuum products; no MIoT crosswalk.",
+      "claim_sha256": "bdfb6e6b26bef0c17a9372b1c8efb6bf852ece7a997df0be6388a8a2f5020d24",
+      "raw_source_sha256": null,
+      "raw_hash_status": "raw_source_unavailable_from_browser_capture"
+    },
+    {
+      "id": "viomi-alpha-manual",
+      "url": "https://www.viomi.com/public/uploads/files/20210816/09251a49e3cc13e6aadac1b7920b82a5.pdf",
+      "accessed": "2026-09-05",
+      "authority": "manufacturer",
+      "claim": "Viomi Alpha manual is primary but does not map v3/vxx namespaces.",
+      "claim_sha256": "7a4aa38a0cf205391af6bb723988668a5dfc837c0dd635fb2dc8ba575e1358fe",
+      "raw_source_sha256": null,
+      "raw_hash_status": "raw_source_unavailable_from_browser_capture"
+    },
+    {
+      "id": "360-2s-manual",
+      "url": "https://ipc-pr-cdn.jia.360.cn/ipc-pr/SDJ2S.pdf",
+      "accessed": "2026-09-05",
+      "authority": "manufacturer",
+      "claim": "360 manual identifies 2S water-tank/mop package, not 360sdj.s.",
+      "claim_sha256": "b67f23ace123ddce4fa339ca3a2fc32f66502274602758bd329d3a8f1546711b",
+      "raw_source_sha256": null,
+      "raw_hash_status": "raw_source_unavailable_from_browser_capture"
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "namespace:360sdj",
+      "namespace": "360sdj",
+      "record_ids": [
+        "360sdj.vacuum.s"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "unknown_exact_mapping_after_family_source",
+      "source_ids": [
+        "360-2s-manual"
+      ],
+      "missing_evidence": "Primary family page exists, but no public protocol-ID-to-retail-SKU crosswalk, exact region and active firmware binding was found.",
+      "remaining_ready": true
+    },
+    {
+      "group_id": "namespace:beem",
+      "namespace": "beem",
+      "record_ids": [
+        "beem.vacuum.irspc"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:cgzn",
+      "namespace": "cgzn",
+      "record_ids": [
+        "cgzn.vacuum.vacuum"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:chuangmi",
+      "namespace": "chuangmi",
+      "record_ids": [
+        "chuangmi.vacuum.707b02",
+        "chuangmi.vacuum.719a02",
+        "chuangmi.vacuum.hmi707"
+      ],
+      "record_count": 3,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:deerma",
+      "namespace": "deerma",
+      "record_ids": [
+        "deerma.vacuum.a2403",
+        "deerma.vacuum.a2404",
+        "deerma.vacuum.a2505",
+        "deerma.vacuum.a2506",
+        "deerma.vacuum.a2507",
+        "deerma.vacuum.a2509",
+        "deerma.vacuum.a2512",
+        "deerma.vacuum.a2513",
+        "deerma.vacuum.x70pro",
+        "deerma.vacuum.x80m",
+        "deerma.vacuum.x90m"
+      ],
+      "record_count": 11,
+      "disposition_applies_to_all_records": "unknown_exact_mapping_after_family_source",
+      "source_ids": [
+        "deerma-global"
+      ],
+      "missing_evidence": "Primary family page exists, but no public protocol-ID-to-retail-SKU crosswalk, exact region and active firmware binding was found.",
+      "remaining_ready": true
+    },
+    {
+      "group_id": "namespace:dji",
+      "namespace": "dji",
+      "record_ids": [
+        "dji.vacuum.romo"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:doit",
+      "namespace": "doit",
+      "record_ids": [
+        "doit.vacuum.vacuum"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:dreame",
+      "namespace": "dreame",
+      "record_ids": [
+        "dreame.vacuum.ma1808",
+        "dreame.vacuum.mb1808",
+        "dreame.vacuum.mc1808",
+        "dreame.vacuum.md1808",
+        "dreame.vacuum.p2008",
+        "dreame.vacuum.p2009",
+        "dreame.vacuum.p2027",
+        "dreame.vacuum.p2028",
+        "dreame.vacuum.p2028a",
+        "dreame.vacuum.p2029",
+        "dreame.vacuum.p2036",
+        "dreame.vacuum.p2041",
+        "dreame.vacuum.p2041o",
+        "dreame.vacuum.p2114a",
+        "dreame.vacuum.p2114o",
+        "dreame.vacuum.p2140",
+        "dreame.vacuum.p2140a",
+        "dreame.vacuum.p2140o",
+        "dreame.vacuum.p2140p",
+        "dreame.vacuum.p2140q",
+        "dreame.vacuum.p2148o",
+        "dreame.vacuum.p2149o",
+        "dreame.vacuum.p2150a",
+        "dreame.vacuum.p2150b",
+        "dreame.vacuum.p2150o",
+        "dreame.vacuum.p2156",
+        "dreame.vacuum.p2156o",
+        "dreame.vacuum.p2157",
+        "dreame.vacuum.p2187",
+        "dreame.vacuum.p2259",
+        "dreame.vacuum.r2104",
+        "dreame.vacuum.r2205",
+        "dreame.vacuum.r2209",
+        "dreame.vacuum.r2210",
+        "dreame.vacuum.r2211o",
+        "dreame.vacuum.r2215",
+        "dreame.vacuum.r2216o",
+        "dreame.vacuum.r2228",
+        "dreame.vacuum.r2228o",
+        "dreame.vacuum.r2228z",
+        "dreame.vacuum.r2232a",
+        "dreame.vacuum.r2232c",
+        "dreame.vacuum.r2233",
+        "dreame.vacuum.r2235",
+        "dreame.vacuum.r2246",
+        "dreame.vacuum.r2247",
+        "dreame.vacuum.r2251o",
+        "dreame.vacuum.r2254"
+      ],
+      "record_count": 48,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:eco",
+      "namespace": "eco",
+      "record_ids": [
+        "eco.vacuum.deebot",
+        "eco.vacuum.dibao",
+        "eco.vacuum.dk45",
+        "eco.vacuum.dqcneu",
+        "eco.vacuum.dv33p",
+        "eco.vacuum.dv37",
+        "eco.vacuum.dx93",
+        "eco.vacuum.ftqb6p",
+        "eco.vacuum.n72",
+        "eco.vacuum.n8bk",
+        "eco.vacuum.n8pink",
+        "eco.vacuum.n8wh",
+        "eco.vacuum.n9",
+        "eco.vacuum.t10",
+        "eco.vacuum.t10acs",
+        "eco.vacuum.t10oaw",
+        "eco.vacuum.t10om",
+        "eco.vacuum.t10t",
+        "eco.vacuum.t5wh",
+        "eco.vacuum.t8aivi",
+        "eco.vacuum.t8mop",
+        "eco.vacuum.t9aivi",
+        "eco.vacuum.t9max",
+        "eco.vacuum.t9pmax",
+        "eco.vacuum.t9pow",
+        "eco.vacuum.turbo",
+        "eco.vacuum.tveglj",
+        "eco.vacuum.x1",
+        "eco.vacuum.x1oaww",
+        "eco.vacuum.x1omaw",
+        "eco.vacuum.x1omni",
+        "eco.vacuum.x1prom"
+      ],
+      "record_count": 32,
+      "disposition_applies_to_all_records": "unknown_exact_mapping_after_family_source",
+      "source_ids": [
+        "ecovacs-n10-uk",
+        "ecovacs-t20-us"
+      ],
+      "missing_evidence": "Primary family page exists, but no public protocol-ID-to-retail-SKU crosswalk, exact region and active firmware binding was found.",
+      "remaining_ready": true
+    },
+    {
+      "group_id": "namespace:gdyimu",
+      "namespace": "gdyimu",
+      "record_ids": [
+        "gdyimu.vacuum.g1m",
+        "gdyimu.vacuum.r1",
+        "gdyimu.vacuum.r1da"
+      ],
+      "record_count": 3,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:ghome",
+      "namespace": "ghome",
+      "record_ids": [
+        "ghome.vacuum.sf013"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:girt",
+      "namespace": "girt",
+      "record_ids": [
+        "girt.vacuum.cleanrobot",
+        "girt.vacuum.vacuum"
+      ],
+      "record_count": 2,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:hanyi",
+      "namespace": "hanyi",
+      "record_ids": [
+        "hanyi.vacuum.m7pro",
+        "hanyi.vacuum.m8pro"
+      ],
+      "record_count": 2,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:homend",
+      "namespace": "homend",
+      "record_ids": [
+        "homend.vacuum.1293h"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:ijai",
+      "namespace": "ijai",
+      "record_ids": [
+        "ijai.vacuum.v1",
+        "ijai.vacuum.v10",
+        "ijai.vacuum.v13",
+        "ijai.vacuum.v14",
+        "ijai.vacuum.v15",
+        "ijai.vacuum.v16",
+        "ijai.vacuum.v17",
+        "ijai.vacuum.v18",
+        "ijai.vacuum.v19",
+        "ijai.vacuum.v2",
+        "ijai.vacuum.v24",
+        "ijai.vacuum.v3"
+      ],
+      "record_count": 12,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:ilife",
+      "namespace": "ilife",
+      "record_ids": [
+        "ilife.vacuum.x900"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:iot",
+      "namespace": "iot",
+      "record_ids": [
+        "iot.vacuum.cc1"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:jdyw",
+      "namespace": "jdyw",
+      "record_ids": [
+        "jdyw.vacuum.t300",
+        "jdyw.vacuum.t300g",
+        "jdyw.vacuum.u300p",
+        "jdyw.vacuum.u400",
+        "jdyw.vacuum.u400g"
+      ],
+      "record_count": 5,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:lambot",
+      "namespace": "lambot",
+      "record_ids": [
+        "lambot.vacuum.lambot"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:meijin",
+      "namespace": "meijin",
+      "record_ids": [
+        "meijin.vacuum.2406b",
+        "meijin.vacuum.w3"
+      ],
+      "record_count": 2,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:mijia",
+      "namespace": "mijia",
+      "record_ids": [
+        "mijia.vacuum.b108za",
+        "mijia.vacuum.b108zb",
+        "mijia.vacuum.b108zh",
+        "mijia.vacuum.v1",
+        "mijia.vacuum.v2",
+        "mijia.vacuum.v3"
+      ],
+      "record_count": 6,
+      "disposition_applies_to_all_records": "unknown_exact_mapping_after_family_source",
+      "source_ids": [
+        "xiaomi-global-mi-robot"
+      ],
+      "missing_evidence": "Primary family page exists, but no public protocol-ID-to-retail-SKU crosswalk, exact region and active firmware binding was found.",
+      "remaining_ready": true
+    },
+    {
+      "group_id": "namespace:miot",
+      "namespace": "miot",
+      "record_ids": [
+        "miot.vacuum.22222",
+        "miot.vacuum.4455",
+        "miot.vacuum.dl1",
+        "miot.vacuum.fdl1"
+      ],
+      "record_count": 4,
+      "disposition_applies_to_all_records": "unknown_exact_mapping_after_family_source",
+      "source_ids": [
+        "xiaomi-global-mi-robot"
+      ],
+      "missing_evidence": "Primary family page exists, but no public protocol-ID-to-retail-SKU crosswalk, exact region and active firmware binding was found.",
+      "remaining_ready": true
+    },
+    {
+      "group_id": "namespace:narwa",
+      "namespace": "narwa",
+      "record_ids": [
+        "narwa.vacuum.001",
+        "narwa.vacuum.ax11",
+        "narwa.vacuum.ax12",
+        "narwa.vacuum.ax17",
+        "narwa.vacuum.ax17p",
+        "narwa.vacuum.ax18",
+        "narwa.vacuum.ax19",
+        "narwa.vacuum.ax24",
+        "narwa.vacuum.ax25",
+        "narwa.vacuum.ax6",
+        "narwa.vacuum.ax7mi",
+        "narwa.vacuum.ax8",
+        "narwa.vacuum.bx4",
+        "narwa.vacuum.cx1",
+        "narwa.vacuum.cx2",
+        "narwa.vacuum.cx3",
+        "narwa.vacuum.cx3mi",
+        "narwa.vacuum.cx3p",
+        "narwa.vacuum.cx4",
+        "narwa.vacuum.cx7",
+        "narwa.vacuum.j3",
+        "narwa.vacuum.j4",
+        "narwa.vacuum.j4lite",
+        "narwa.vacuum.j4lmi",
+        "narwa.vacuum.j4mi",
+        "narwa.vacuum.j4pmi",
+        "narwa.vacuum.j5",
+        "narwa.vacuum.j5c",
+        "narwa.vacuum.j5x",
+        "narwa.vacuum.j64",
+        "narwa.vacuum.j65",
+        "narwa.vacuum.j72",
+        "narwa.vacuum.j78",
+        "narwa.vacuum.x30",
+        "narwa.vacuum.x31",
+        "narwa.vacuum.x38"
+      ],
+      "record_count": 36,
+      "disposition_applies_to_all_records": "unknown_exact_mapping_after_family_source",
+      "source_ids": [
+        "narwal-freo-series"
+      ],
+      "missing_evidence": "Primary family page exists, but no public protocol-ID-to-retail-SKU crosswalk, exact region and active firmware binding was found.",
+      "remaining_ready": true
+    },
+    {
+      "group_id": "namespace:onej",
+      "namespace": "onej",
+      "record_ids": [
+        "onej.vacuum.clean"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:orvibo",
+      "namespace": "orvibo",
+      "record_ids": [
+        "orvibo.vacuum.robot"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:puppy",
+      "namespace": "puppy",
+      "record_ids": [
+        "puppy.vacuum.r3x"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:roborock",
+      "namespace": "roborock",
+      "record_ids": [
+        "roborock.sweeper.s5v2",
+        "roborock.vacuum.a01",
+        "roborock.vacuum.a05",
+        "roborock.vacuum.a08",
+        "roborock.vacuum.a09",
+        "roborock.vacuum.a10",
+        "roborock.vacuum.a11",
+        "roborock.vacuum.a14",
+        "roborock.vacuum.a15",
+        "roborock.vacuum.a19",
+        "roborock.vacuum.a23",
+        "roborock.vacuum.a26",
+        "roborock.vacuum.a27",
+        "roborock.vacuum.a29",
+        "roborock.vacuum.a30",
+        "roborock.vacuum.a34",
+        "roborock.vacuum.a37",
+        "roborock.vacuum.a38",
+        "roborock.vacuum.a40",
+        "roborock.vacuum.a46",
+        "roborock.vacuum.a51",
+        "roborock.vacuum.a52",
+        "roborock.vacuum.a62",
+        "roborock.vacuum.a64",
+        "roborock.vacuum.a65",
+        "roborock.vacuum.a66",
+        "roborock.vacuum.a69",
+        "roborock.vacuum.a70",
+        "roborock.vacuum.a72",
+        "roborock.vacuum.a73",
+        "roborock.vacuum.a74",
+        "roborock.vacuum.a75",
+        "roborock.vacuum.a76",
+        "roborock.vacuum.c1",
+        "roborock.vacuum.ca86",
+        "roborock.vacuum.cloud",
+        "roborock.vacuum.e2",
+        "roborock.vacuum.m1s",
+        "roborock.vacuum.p5",
+        "roborock.vacuum.p6",
+        "roborock.vacuum.s4",
+        "roborock.vacuum.s5",
+        "roborock.vacuum.s5e",
+        "roborock.vacuum.s6",
+        "roborock.vacuum.t4",
+        "roborock.vacuum.t6"
+      ],
+      "record_count": 46,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:rockrobo",
+      "namespace": "rockrobo",
+      "record_ids": [
+        "rockrobo.vacuum.v1"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:roidmi",
+      "namespace": "roidmi",
+      "record_ids": [
+        "roidmi.cleaner.v382",
+        "roidmi.vacuum.r1b",
+        "roidmi.vacuum.sdj60",
+        "roidmi.vacuum.v60",
+        "roidmi.vacuum.v62",
+        "roidmi.vacuum.v63",
+        "roidmi.vacuum.v66"
+      ],
+      "record_count": 7,
+      "disposition_applies_to_all_records": "unknown_exact_mapping_after_family_source",
+      "source_ids": [
+        "roidmi-global"
+      ],
+      "missing_evidence": "Primary family page exists, but no public protocol-ID-to-retail-SKU crosswalk, exact region and active firmware binding was found.",
+      "remaining_ready": true
+    },
+    {
+      "group_id": "namespace:scinan",
+      "namespace": "scinan",
+      "record_ids": [
+        "scinan.vacuum.psw01"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:swhome",
+      "namespace": "swhome",
+      "record_ids": [
+        "swhome.vacuum.0"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:szkj",
+      "namespace": "szkj",
+      "record_ids": [
+        "szkj.vacuum.fc01eu",
+        "szkj.vacuum.mjfc01"
+      ],
+      "record_count": 2,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:tab",
+      "namespace": "tab",
+      "record_ids": [
+        "tab.vacuum.robot"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:tuya",
+      "namespace": "tuya",
+      "record_ids": [
+        "tuya.vacuum.pt016"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:viomi",
+      "namespace": "viomi",
+      "record_ids": [
+        "viomi.vacuum.v10",
+        "viomi.vacuum.v11",
+        "viomi.vacuum.v12",
+        "viomi.vacuum.v13",
+        "viomi.vacuum.v15",
+        "viomi.vacuum.v17",
+        "viomi.vacuum.v18",
+        "viomi.vacuum.v19",
+        "viomi.vacuum.v20",
+        "viomi.vacuum.v21",
+        "viomi.vacuum.v22",
+        "viomi.vacuum.v23",
+        "viomi.vacuum.v24",
+        "viomi.vacuum.v25",
+        "viomi.vacuum.v27",
+        "viomi.vacuum.v29",
+        "viomi.vacuum.v3",
+        "viomi.vacuum.v31",
+        "viomi.vacuum.v35",
+        "viomi.vacuum.v36",
+        "viomi.vacuum.v37",
+        "viomi.vacuum.v38",
+        "viomi.vacuum.v40",
+        "viomi.vacuum.v41",
+        "viomi.vacuum.v45",
+        "viomi.vacuum.v49",
+        "viomi.vacuum.v53",
+        "viomi.vacuum.v56",
+        "viomi.vacuum.v6",
+        "viomi.vacuum.v60",
+        "viomi.vacuum.v7",
+        "viomi.vacuum.v8",
+        "viomi.vacuum.v9"
+      ],
+      "record_count": 33,
+      "disposition_applies_to_all_records": "unknown_exact_mapping_after_family_source",
+      "source_ids": [
+        "viomi-alpha-manual"
+      ],
+      "missing_evidence": "Primary family page exists, but no public protocol-ID-to-retail-SKU crosswalk, exact region and active firmware binding was found.",
+      "remaining_ready": true
+    },
+    {
+      "group_id": "namespace:xiaomi",
+      "namespace": "xiaomi",
+      "record_ids": [
+        "xiaomi.vacuum.b106bk",
+        "xiaomi.vacuum.b106eu",
+        "xiaomi.vacuum.b108gl",
+        "xiaomi.vacuum.b112",
+        "xiaomi.vacuum.b112bk",
+        "xiaomi.vacuum.b112gl",
+        "xiaomi.vacuum.c101",
+        "xiaomi.vacuum.c101eu",
+        "xiaomi.vacuum.c102cn",
+        "xiaomi.vacuum.c102gl",
+        "xiaomi.vacuum.c103",
+        "xiaomi.vacuum.c104",
+        "xiaomi.vacuum.c107",
+        "xiaomi.vacuum.c108",
+        "xiaomi.vacuum.d101",
+        "xiaomi.vacuum.d102ev",
+        "xiaomi.vacuum.d102gl",
+        "xiaomi.vacuum.d103cn",
+        "xiaomi.vacuum.d106gl",
+        "xiaomi.vacuum.d109gl",
+        "xiaomi.vacuum.d110ch",
+        "xiaomi.vacuum.e101gb",
+        "xiaomi.vacuum.ov21cn",
+        "xiaomi.vacuum.ov21gl",
+        "xiaomi.vacuum.ov31cn",
+        "xiaomi.vacuum.ov31gl",
+        "xiaomi.vacuum.ov42cn",
+        "xiaomi.vacuum.ov42gl",
+        "xiaomi.vacuum.ov43gb",
+        "xiaomi.vacuum.ov51gl",
+        "xiaomi.vacuum.ov71gl",
+        "xiaomi.vacuum.ov81cn",
+        "xiaomi.vacuum.ov81gl",
+        "xiaomi.vacuum.pv11cn",
+        "xiaomi.vacuum.pv11gl",
+        "xiaomi.vacuum.pv21cn",
+        "xiaomi.vacuum.pv21gl",
+        "xiaomi.vacuum.pv31cn",
+        "xiaomi.vacuum.pv32cn",
+        "xiaomi.vacuum.pv32gl",
+        "xiaomi.vacuum.pv51gl",
+        "xiaomi.vacuum.pv81gl",
+        "xiaomi.vacuum.qv41cn"
+      ],
+      "record_count": 43,
+      "disposition_applies_to_all_records": "unknown_exact_mapping_after_family_source",
+      "source_ids": [
+        "xiaomi-global-mi-robot",
+        "xiaomi-5-pro"
+      ],
+      "missing_evidence": "Primary family page exists, but no public protocol-ID-to-retail-SKU crosswalk, exact region and active firmware binding was found.",
+      "remaining_ready": true
+    },
+    {
+      "group_id": "namespace:xtl",
+      "namespace": "xtl",
+      "record_ids": [
+        "xtl.vacuum.2407a",
+        "xtl.vacuum.3505",
+        "xtl.vacuum.3505a",
+        "xtl.vacuum.3512",
+        "xtl.vacuum.xm2216",
+        "xtl.vacuum.xt3401",
+        "xtl.vacuum.xt3405",
+        "xtl.vacuum.xt3411"
+      ],
+      "record_count": 8,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:xzh",
+      "namespace": "xzh",
+      "record_ids": [
+        "xzh.vacuum.vacuum"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:yeedi",
+      "namespace": "yeedi",
+      "record_ids": [
+        "yeedi.vacuum.750",
+        "yeedi.vacuum.k10",
+        "yeedi.vacuum.k20",
+        "yeedi.vacuum.k650",
+        "yeedi.vacuum.k720",
+        "yeedi.vacuum.k730",
+        "yeedi.vacuum.k780p",
+        "yeedi.vacuum.k781",
+        "yeedi.vacuum.k800",
+        "yeedi.vacuum.k801",
+        "yeedi.vacuum.k802",
+        "yeedi.vacuum.k803",
+        "yeedi.vacuum.k804",
+        "yeedi.vacuum.k950",
+        "yeedi.vacuum.k960",
+        "yeedi.vacuum.yeedi"
+      ],
+      "record_count": 16,
+      "disposition_applies_to_all_records": "unknown_exact_mapping_after_family_source",
+      "source_ids": [
+        "yeedi-products"
+      ],
+      "missing_evidence": "Primary family page exists, but no public protocol-ID-to-retail-SKU crosswalk, exact region and active firmware binding was found.",
+      "remaining_ready": true
+    },
+    {
+      "group_id": "namespace:yonsz",
+      "namespace": "yonsz",
+      "record_ids": [
+        "yonsz.vacuum.0",
+        "yonsz.vacuum.1"
+      ],
+      "record_count": 2,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:yuerzj",
+      "namespace": "yuerzj",
+      "record_ids": [
+        "yuerzj.vacuum.rc01"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:zhimi",
+      "namespace": "zhimi",
+      "record_ids": [
+        "zhimi.vacuum.ga1",
+        "zhimi.vacuum.hd1",
+        "zhimi.vacuum.l1",
+        "zhimi.vacuum.r5",
+        "zhimi.vacuum.r5l",
+        "zhimi.vacuum.w2",
+        "zhimi.vacuum.w2lite",
+        "zhimi.vacuum.w2max",
+        "zhimi.vacuum.wa1",
+        "zhimi.vacuum.xa1",
+        "zhimi.vacuum.xa2",
+        "zhimi.vacuum.xa3"
+      ],
+      "record_count": 12,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    },
+    {
+      "group_id": "namespace:zigma",
+      "namespace": "zigma",
+      "record_ids": [
+        "zigma.vacuum.laser"
+      ],
+      "record_count": 1,
+      "disposition_applies_to_all_records": "blocked_no_identifiable_primary_source_after_group_search",
+      "source_ids": [],
+      "missing_evidence": "No exact usable primary manufacturer page/manual mapping this namespace to public retail SKU and mopping capability was found in bounded search; protocol presence is insufficient.",
+      "remaining_ready": false
+    }
+  ],
+  "coverage": {
+    "input_records": 356,
+    "unresolved_input_records": 356,
+    "output_records": 356,
+    "unique_record_ids": 356,
+    "groups": 43,
+    "groups_with_candidate_primary_source": 10,
+    "groups_without_candidate_primary_source": 33,
+    "remaining_ready_records": 189,
+    "blocked_records_after_group_search": 167
+  },
+  "remaining_ready_group_order": [
+    "namespace:xiaomi",
+    "namespace:narwa",
+    "namespace:viomi",
+    "namespace:eco",
+    "namespace:yeedi",
+    "namespace:deerma",
+    "namespace:roidmi",
+    "namespace:mijia",
+    "namespace:miot",
+    "namespace:360sdj"
+  ],
+  "record_disposition_rule": "Each record_id in a group receives that group disposition and missing_evidence; original URL/hash remains in input inventory referenced above. Rates and action completion are blocked for every record.",
+  "next_phase": "Exact primary source crosswalk per remaining_ready groups; targeted lookup for blocked groups; no rate/action-completion approval."
+}

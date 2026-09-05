@@ -1,0 +1,13 @@
+{
+  "freeze": "2026-09-05",
+  "purpose": "labeled-estimate publication candidate",
+  "bundle_schema_version": 2,
+  "dataset_version": "0.2.0",
+  "payload_sha256": "5444b736ceb6e84e5b16b7bc0716dac65211970ba1e68ac9e914f296dd84880e",
+  "bundle_file_sha256": "6959f1f5965884f1ede71128534905bd403878f2416cd426bf67c180befe6cff",
+  "record_count": 168,
+  "labeled_runtime_estimates": 2,
+  "approved_profiles": 0,
+  "contract": "Estimate source_type and estimate_readiness are separate. Runtime values retain basis, unit, method, named-model scope and limitations; they are not measurement, approval or completion proof.",
+  "migration": "A verified schema-v1 bundle can be deterministically repackaged with tools.build_bundle.migrate_v1_bundle; migration adds no estimate or approval."
+}

@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "report_type": "public_source_evidence",
+  "researched_at": "2026-09-05",
+  "scope": "bounded public-source batch: Xiaomi H50 Pro/VR4050, Roborock Qrevo, ECOVACS DEEBOT X8/OZMO, plus pinned HA source semantics",
+  "global_inventory_complete": false,
+  "worldwide_coverage_claim": false,
+  "hash_policy": {
+    "source_sha256": "Recorded when the exact source bytes were locally retrievable. Browser search/open supplied rendered evidence but raw bytes were not available in this sandbox.",
+    "web_capture_sha256": "not_available",
+    "evidence_sha256": "Hash of the normalized claim object is recorded per evidence item; it is not a source-content hash."
+  },
+  "sources": [
+    {
+      "id": "xiaomi-h50-pl-product",
+      "url": "https://www.mi.com/pl/product/xiaomi-robot-vacuum-h50-pro/",
+      "accessed": "2026-09-05",
+      "source_sha256": null,
+      "hash_status": "raw_source_unavailable_from_browser_capture",
+      "region": "PL",
+      "authority": "manufacturer"
+    },
+    {
+      "id": "xiaomi-h50-global-specs",
+      "url": "https://www.mi.com/global/product/xiaomi-robot-vacuum-h50-pro/specs/",
+      "accessed": "2026-09-05",
+      "source_sha256": null,
+      "hash_status": "raw_source_unavailable_from_browser_capture",
+      "region": "global",
+      "authority": "manufacturer"
+    },
+    {
+      "id": "xiaomi-h50-pl-faq",
+      "url": "https://www.mi.com/pl/support/faq/details/KA-1036331/",
+      "accessed": "2026-09-05",
+      "source_sha256": null,
+      "hash_status": "raw_source_unavailable_from_browser_capture",
+      "region": "PL",
+      "authority": "manufacturer"
+    },
+    {
+      "id": "xiaomi-h50-uk-faq",
+      "url": "https://www.mi.com/uk/support/faq/details/KA-673648/",
+      "accessed": "2026-09-05",
+      "source_sha256": null,
+      "hash_status": "raw_source_unavailable_from_browser_capture",
+      "region": "UK",
+      "authority": "manufacturer"
+    },
+    {
+      "id": "roborock-qrevo-us-product",
+      "url": "https://us.roborock.com/pages/roborock-qrevo-series",
+      "accessed": "2026-09-05",
+      "source_sha256": null,
+      "hash_status": "raw_source_unavailable_from_browser_capture",
+      "region": "US",
+      "authority": "manufacturer"
+    },
+    {
+      "id": "ecovacs-x8-global-campaign",
+      "url": "https://www.ecovacs.com/global/campaign/deebot-x8-family",
+      "accessed": "2026-09-05",
+      "source_sha256": null,
+      "hash_status": "raw_source_unavailable_from_browser_capture",
+      "region": "global",
+      "authority": "manufacturer"
+    },
+    {
+      "id": "ecovacs-x8-uk-product",
+      "url": "https://www.ecovacs.com/uk/campaign/deebot-x8",
+      "accessed": "2026-09-05",
+      "source_sha256": null,
+      "hash_status": "raw_source_unavailable_from_browser_capture",
+      "region": "UK",
+      "authority": "manufacturer"
+    },
+    {
+      "id": "miot-inventory-frozen",
+      "url": "https://miot-spec.org/miot-spec-v2/instances?status=all",
+      "accessed": "2026-09-05",
+      "source_sha256": "00a72dc5f2981db700ea6c3d70d549d8bfde0b7e4b55e754cfc46e773e60937d",
+      "hash_status": "frozen_local_report_hash",
+      "region": "global",
+      "authority": "public_protocol_registry"
+    },
+    {
+      "id": "ha-source-contract-fixture",
+      "url": "https://github.com/home-assistant/core/tree/93ecba49bd35ee65d12596d3d7f28863a63dd8fe/homeassistant/components",
+      "accessed": "2026-09-05",
+      "source_sha256": "5b3ad929613753ae6a13ca3ff1b937799eddc5b696a36c180ac31a921d77e556",
+      "hash_status": "frozen_local_fixture_hash",
+      "region": "global",
+      "authority": "open_source_integration"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-xiaomi-h50-retail-mop-pl",
+      "source_ids": ["xiaomi-h50-pl-product", "xiaomi-h50-global-specs"],
+      "claim": "Xiaomi Robot Vacuum H50 Pro is presented on Xiaomi PL/global manufacturer pages as a regional product with a multifunction dock, clean and dirty water tanks, mop brackets/pads and automatic mop washing/drying.",
+      "evidence_class": "manufacturer_declaration",
+      "evidence_sha256": "1e01933f5c0c85ad111671da81f48b310144377cbfb1b08b60f6ece9f19a5d58",
+      "supports": ["retail_identity_region=PL", "mop_capability=true", "dock_clean_dirty_reservoirs=true"],
+      "does_not_support": ["hardware_verified", "measured_ml", "approved_profile", "active_firmware_binding"]
+    },
+    {
+      "id": "ev-xiaomi-h50-quantities",
+      "source_ids": ["xiaomi-h50-pl-faq", "xiaomi-h50-uk-faq"],
+      "claim": "Manufacturer FAQ states up to 32 mop-pad cleanings from a full clean-water tank; docking logic uses 180 ml for first cleaning and 120 ml per mid-task mop cleaning.",
+      "evidence_class": "manufacturer_declaration",
+      "quantities": {"first_mop_wash_ml": 180, "mid_task_mop_wash_ml": 120, "maximum_cleanings": 32},
+      "conditions": ["vacuum-and-mop or mop mode", "mop washing enabled", "dock/tank conditions satisfied"],
+      "evidence_sha256": "3facd09a5ed8750799f11765bcd4f8de03da053bd00518560e704cf95b2f69ca",
+      "does_not_support": ["measured_ml", "per-model-firmware stability", "completion counter identity", "dirty-water quantity", "approved profile"]
+    },
+    {
+      "id": "ev-xiaomi-h50-settings",
+      "source_ids": ["xiaomi-h50-pl-faq", "xiaomi-h50-uk-faq"],
+      "claim": "H50 Pro FAQ describes mid-task wash triggers at default 8 m² or 8 minutes, adjustable to 5/8/10 m² or 5/8/10 minutes, and mop lift of 10 mm.",
+      "evidence_class": "manufacturer_declaration",
+      "evidence_sha256": "4c686950b06e75a20af0f0cc34b2943637ecde50f5b041c870c5e5b54b174b25",
+      "supports": ["mop_mode_applicability", "wash_frequency_setting_applicability", "mop_lift_capability"],
+      "does_not_support": ["water_rate_by_setting", "HA_entity_contract", "completion_event"]
+    },
+    {
+      "id": "ev-roborock-qrevo-water-settings",
+      "source_ids": ["roborock-qrevo-us-product"],
+      "claim": "Roborock Qrevo manufacturer page documents adjustable water flow and a dock mop-washing process with dynamic speed/water flow; product-family statements do not bind every SKU or firmware.",
+      "evidence_class": "manufacturer_declaration",
+      "evidence_sha256": "5b5f729e16054d65dd945242343686c6591f3b4a46af342b05fae3a2b98962ed",
+      "supports": ["water_level_setting_applicability", "mop_wash_capability"],
+      "does_not_support": ["ml_rate", "all_qrevo_skus", "HA_completion_identity", "hardware_verified"]
+    },
+    {
+      "id": "ev-ecovacs-x8-water-renewal",
+      "source_ids": ["ecovacs-x8-global-campaign", "ecovacs-x8-uk-product"],
+      "claim": "ECOVACS X8 family pages document OZMO ROLLER fresh-water renewal, 16 nozzles, 200 washing actions per minute, mop washing, 4 L station tanks on the family specification, and selectable cleaning modes; these are product-family declarations, not measured consumption rates.",
+      "evidence_class": "manufacturer_declaration",
+      "evidence_sha256": "b4854800b5cd967b469564e2737cc161a02a45ba97f48d6eaf93fb919dd913d6",
+      "supports": ["mop_capability", "cleaning_mode_applicability", "station_reservoir_identity"],
+      "does_not_support": ["ml_rate", "completion_counter", "all_regions_or_skus", "hardware_verified"]
+    },
+    {
+      "id": "ev-ha-pinned-semantics",
+      "source_ids": ["ha-source-contract-fixture"],
+      "claim": "Pinned HA source fixture preserves nine capability-dependent bindings: Roborock mop intensity/mode/cleaning mode/route/area/time and ECOVACS water amount/work mode/clean count; null model/SKU/firmware means the fixture is not an exact device binding.",
+      "evidence_class": "source_documented_integration_semantics",
+      "evidence_sha256": "d3f536c2c38990ffbb6e01619821c717d4f30f0d7d37fac39bff7a0adcfcc4dc6",
+      "supports": ["canonical_role_domain_unit_inventory"],
+      "does_not_support": ["device_capability", "physical_ml", "action_completion", "approved_profile"]
+    }
+  ],
+  "action_dispositions": [
+    {"action": "wash_mop", "remaining_work": "blocked", "finding": "H50 source quantities and trigger semantics are documented, but no exact HA/integration completion counter or terminal event was found; Roborock/ECOVACS family sources likewise do not provide one.", "resume_condition": "Obtain exact model/SKU/firmware/integration entity and a counter increment or documented terminal event plus timestamped physical-ml intake."},
+    {"action": "tray_clean", "remaining_work": "blocked", "finding": "Manufacturer assisted-washing instructions describe a process, not an integration completion identity or measured amount.", "resume_condition": "Public source must expose a terminal completion event/counter for the exact scoped device, or a device reporter supplies a sanitized trace."},
+    {"action": "flush", "remaining_work": "blocked", "finding": "No source-backed completion identity and no defensible quantity were found; dock capacity/process descriptions are insufficient.", "resume_condition": "Exact station model and public terminal event/counter, followed by physical measurement with independent repeats."},
+    {"action": "refill", "remaining_work": "blocked", "finding": "Tank capacity and auto-refill/capability declarations do not identify a completed refill or supply volume.", "resume_condition": "Exact source contract plus refill counter/terminal event and physical clean-water measurement; preserve external_supply separately."},
+    {"action": "detergent_dose", "remaining_work": "blocked", "finding": "No scoped concentration/density and completion source was found; no grams-to-ml conversion is permitted.", "resume_condition": "Manufacturer concentration/density contract and independently measured dose for the exact model/firmware, or remain not_applicable."},
+    {"action": "retail_sku_region_mop_capability_batch", "remaining_work": "complete", "finding": "Bounded batch resolved public regional/product-family evidence for Xiaomi H50 Pro, Roborock Qrevo and ECOVACS X8; it does not resolve the 356-ID global denominator.", "resume_condition": "For each remaining MIoT ID, exact regional retail SKU and independent mopping proof; protocol presence alone remains insufficient."}
+  ],
+  "limitations": [
+    "Browser-rendered web evidence was available, but raw response bytes could not be retrieved locally; source-content SHA-256 is explicitly null rather than fabricated.",
+    "Manufacturer declarations are not measured, approved or hardware_verified evidence.",
+    "No private HA control, private-data scan, device operation or runtime/app/schema/test change was performed.",
+    "No worldwide completeness or retail denominator is claimed; the frozen MIoT denominator remains 356 protocol IDs with unknown retail denominator."
+  ]
+}

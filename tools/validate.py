@@ -7,7 +7,7 @@ from urllib.parse import urlsplit
 from jsonschema import Draft202012Validator, FormatChecker
 
 ROOT=Path(__file__).resolve().parents[1]
-KINDS=('model','integration','observation','profile','settings_catalog')
+KINDS=('model','integration','observation','profile','settings_catalog','estimate')
 
 def canonical(value):
     return json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(',',':'),allow_nan=False).encode()
@@ -43,6 +43,12 @@ def validate_record(record):
             if record['exposure_domain']['min']>record['exposure_domain']['max']:raise ValueError('Inverted exposure domain')
             if record['method'] not in allowed[record['scope']]:raise ValueError('Profile scope/method mismatch')
             if record['unit']!=expected[record['method']]:raise ValueError('Method/unit mismatch')
+        if kind=='estimate':
+            if record['estimate_readiness']=='labeled_runtime_estimate' and record['source_type']=='unknown':raise ValueError('Unknown source cannot be runtime estimate')
+            if record['basis_kind']=='tank_capacity':raise ValueError('Tank capacity is not a consumption basis')
+            if record['applicability']['model_scope']!='named_model':raise ValueError('Family scope cannot prove a runtime estimate')
+            if record['applicability']['sku_scope']=='exact' and record['context']['sku'] is None:raise ValueError('Exact SKU scope needs SKU')
+            if record['applicability']['firmware_scope']=='exact' and record['context']['firmware'] is None:raise ValueError('Exact firmware scope needs firmware')
     except Exception as error:
         raise ValueError(f"Invalid {record.get('id','record')}: {error}") from error
 
@@ -65,11 +71,22 @@ def validate_dataset(records):
                     if key not in dimensions or value not in dimensions[key]['options']:raise ValueError('Unknown rule condition')
                 for key,values in rule['allowed'].items():
                     if key not in dimensions or not set(values)<=set(dimensions[key]['options']):raise ValueError('Unknown rule options')
-        if r['kind'] not in ('observation','profile'):continue
+        if r['kind'] not in ('observation','profile','estimate'):continue
         context=r['context']
         if by_id.get(context['model_id'],{}).get('kind')!='model':raise ValueError('Missing model reference')
         integration=context['integration_id']
         if integration is not None and by_id.get(integration,{}).get('kind')!='integration':raise ValueError('Missing integration reference')
+        if r['kind']=='estimate':
+            refs=r['basis_ids']
+            if not refs:raise ValueError('Estimate needs source-backed basis')
+            if len(refs)!=len(set(refs)):raise ValueError('Duplicate estimate basis IDs')
+            bases=[by_id.get(key,{}) for key in refs]
+            if any(base.get('kind')!='observation' for base in bases):raise ValueError('Missing estimate basis observation')
+            if any(base['context']!=context for base in bases):raise ValueError('Estimate basis from another context')
+            if r['source_type']=='manufacturer_declaration' and any(base['source_class']!='manufacturer_declaration' for base in bases):raise ValueError('Manufacturer estimate needs manufacturer declaration basis')
+            if r['source_type']=='user_measurement' and any(base['source_class']!='empirical' for base in bases):raise ValueError('Measurement estimate needs empirical basis')
+            if any(base['quantity']!=r['quantity'] for base in bases) and r['basis_kind']=='manufacturer_declared_quantity':raise ValueError('Declared estimate quantity contradicts basis')
+            continue
         if r['kind']!='profile':continue
         refs=r['evidence_ids']
         if len(refs)!=len(set(refs)):raise ValueError('Duplicate evidence IDs')
@@ -120,7 +137,7 @@ def validate_approved(profile,by_id):
 
 def load_records(root=ROOT):
     records=[]
-    for folder in ('models','integrations','observations','consumption_profiles','settings'):
+    for folder in ('models','integrations','observations','estimates','consumption_profiles','settings'):
         for path in sorted((Path(root)/'data'/folder).glob('*.json')):records.append(json.loads(path.read_text()))
     return records
 

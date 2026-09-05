@@ -1,0 +1,47 @@
+name: Sanitized evidence intake
+description: Share a sanitized mop/mop-wash session, public source, or integration binding without raw diagnostics
+body:
+  - type: markdown
+    attributes:
+      value: "Partial or processed data are welcome. Do not post raw diagnostics, credentials, account/device IDs, serials, unique IDs, MAC/IP addresses, room names, maps, location, or absolute timestamps. Preserve only relative time/order/duration needed to reconstruct a session."
+  - type: textarea
+    id: product_context
+    attributes:
+      label: Model, SKU, region, firmware, dock and reservoir
+      description: "State unknown fields explicitly; do not infer a regional SKU or reservoir equivalence."
+    validations:
+      required: true
+  - type: textarea
+    id: integration_context
+    attributes:
+      label: Integration/version and entity binding
+      description: "Include entity domain and canonical property/translation key, not a private entity ID."
+    validations:
+      required: true
+  - type: textarea
+    id: sanitized_transition
+    attributes:
+      label: Sanitized mopping/mop-wash timeline and transitions
+      description: "For mopping: time, area, mode and water used if known. For mop washing: count, duration, settings and water used if known. Use relative timestamps, order and durations; include only relevant attributes."
+    validations:
+      required: true
+  - type: textarea
+    id: source_or_measurement
+    attributes:
+      label: Method and source
+      description: "State whether this is a user measurement, manufacturer declaration, derived estimate or unknown. For a measurement include reservoir, instrument resolution, non-identifying cycle IDs and settings. Tank capacity is not cycle consumption."
+    validations:
+      required: true
+  - type: textarea
+    id: unknowns
+    attributes:
+      label: Unknowns, limitations and publication consent
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy and sharing
+      options:
+        - label: I removed private identifiers and am allowed to share this material under the contribution terms.
+          required: true

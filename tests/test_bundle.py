@@ -13,10 +13,12 @@ class BundleTests(unittest.TestCase):
         b=build(load_records());b['payload']['records'][0]['name']='tampered'
         with self.assertRaises(ValueError):verify(b)
     def test_future_schema_rejected(self):
-        b=build(load_records());b['manifest']['schema_version']=2
+        b=build(load_records());b['manifest']['schema_version']=3
         with self.assertRaises(ValueError):verify(b)
     def test_partial_inventory_never_complete(self):
         r=report(load_records());self.assertFalse(r['goal_complete']);self.assertEqual(sum(m['approved_profiles'] for m in r['models']),0)
+        self.assertEqual(r['coverage_denominators']['miot_protocol_ids'],356)
+        self.assertEqual(r['coverage_denominators']['retail_models'],'unknown')
 
     def test_experimental_and_revoked_profiles_excluded(self):
         from test_calibration import sample_dataset

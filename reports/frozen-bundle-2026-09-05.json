@@ -1,0 +1,11 @@
+{
+  "input_handoff_sha256": "3589049c8f1c391146589970e6c7c9e911fbb30314bafd31b997c478b964474a",
+  "bundle_schema_version": 1,
+  "portable_contract_schema_version": 2,
+  "dataset_version": "0.1.0",
+  "payload_sha256": "90c8cff505012ffaecf0b00c4913056367c986df4e6d2a8b4ecfc07b64a4e9d7",
+  "bundle_file_sha256": "20b38e7bd7ad909aaebc12ba717c16706344b287c1d85aa60af631c93ab9a6f2",
+  "source_revision": "49c90777b289e78cf232be34a8e7ea1abf0bfabc-dirty",
+  "record_count": 166,
+  "goal_complete": false
+}
