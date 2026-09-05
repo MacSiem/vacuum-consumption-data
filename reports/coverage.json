@@ -1771,14 +1771,15 @@
     },
     {
       "id": "integration.ecovacs",
-      "version": "2026.9.0",
+      "version": "93ecba49bd35ee65d12596d3d7f28863a63dd8fe",
       "hardware_verified": false,
-      "documented_signal_contracts": 0,
+      "documented_signal_contracts": 3,
       "unknowns": [
         "Per-model firmware and regional signal presence",
         "Minimum supported upstream version not established",
         "No sanitized real hardware fixture",
-        "Model-specific bindings require review"
+        "Model-specific bindings require review",
+        "This pinned development commit is not evidence of behavior in an installed HA version; model/firmware and actual exposed options require validation."
       ]
     },
     {
@@ -1845,14 +1846,15 @@
     },
     {
       "id": "integration.roborock",
-      "version": "2026.9.0",
+      "version": "93ecba49bd35ee65d12596d3d7f28863a63dd8fe",
       "hardware_verified": false,
-      "documented_signal_contracts": 0,
+      "documented_signal_contracts": 6,
       "unknowns": [
         "Per-model firmware and regional signal presence",
         "Minimum supported upstream version not established",
         "No sanitized real hardware fixture",
-        "Model-specific bindings require review"
+        "Model-specific bindings require review",
+        "This pinned development commit is not evidence of behavior in an installed HA version; model/firmware and actual exposed options require validation."
       ]
     },
     {

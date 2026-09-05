@@ -1,10 +1,53 @@
 {
   "id": "integration.roborock",
   "kind": "integration",
-  "version": "2026.9.0",
+  "version": "93ecba49bd35ee65d12596d3d7f28863a63dd8fe",
   "official": true,
   "supported_model_ids": [],
-  "signal_contracts": [],
+  "signal_contracts": [
+    {
+      "role": "water_level",
+      "key": "mop_intensity",
+      "unit": null,
+      "semantics": "V1 select key water_box_mode; options from status.water_mode_options, absent when None; ordinal, not volume.",
+      "verified": false
+    },
+    {
+      "role": "mop_mode",
+      "key": "mop_mode",
+      "unit": null,
+      "semantics": "V1 mop route selector; options from status.mop_route_options, absent when None; not cleaning action or ml.",
+      "verified": false
+    },
+    {
+      "role": "cleaning_mode",
+      "key": "cleaning_mode",
+      "unit": null,
+      "semantics": "V1 select created only with nonempty cleaning_mode_options. B01/Q7 uses its own mode mapping; do not share enums across protocols.",
+      "verified": false
+    },
+    {
+      "role": "route",
+      "key": "cleaning_route",
+      "unit": null,
+      "semantics": "B01/Q7 select uses CleanPathPreferenceMapping and device clean_path_preference; not a universal V1 key.",
+      "verified": false
+    },
+    {
+      "role": "area",
+      "key": "cleaning_area",
+      "unit": "m2",
+      "semantics": "V1 sensor uses status.square_meter_clean_area. Whole cleaning area is not proof of exclusively mopped area.",
+      "verified": false
+    },
+    {
+      "role": "time",
+      "key": "cleaning_time",
+      "unit": "s",
+      "semantics": "V1 native seconds, suggested minutes; use actual HA unit_of_measurement. Cleaning duration is not proof of active pump time.",
+      "verified": false
+    }
+  ],
   "hardware_verified": false,
   "provenance": [
     {
@@ -12,6 +55,18 @@
       "date": "2026-09-05",
       "type": "integration_code",
       "claim": "HA Core 2026.9.0; inventory only, no hardware verification."
+    },
+    {
+      "url": "https://github.com/home-assistant/core/blob/93ecba49bd35ee65d12596d3d7f28863a63dd8fe/homeassistant/components/roborock/select.py",
+      "date": "2026-09-05",
+      "type": "integration_code",
+      "claim": "Root reviewed exact entity descriptions and capability guards. Source contract only; no per-model hardware validation or consumption coefficients."
+    },
+    {
+      "url": "https://github.com/home-assistant/core/blob/93ecba49bd35ee65d12596d3d7f28863a63dd8fe/homeassistant/components/roborock/sensor.py",
+      "date": "2026-09-05",
+      "type": "integration_code",
+      "claim": "Root reviewed exact entity descriptions and capability guards. Source contract only; no per-model hardware validation or consumption coefficients."
     }
   ],
   "confidence": "unknown",
@@ -19,6 +74,7 @@
     "Per-model firmware and regional signal presence",
     "Minimum supported upstream version not established",
     "No sanitized real hardware fixture",
-    "Model-specific bindings require review"
+    "Model-specific bindings require review",
+    "This pinned development commit is not evidence of behavior in an installed HA version; model/firmware and actual exposed options require validation."
   ]
 }

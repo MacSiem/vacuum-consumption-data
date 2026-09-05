@@ -1,10 +1,32 @@
 {
   "id": "integration.ecovacs",
   "kind": "integration",
-  "version": "2026.9.0",
+  "version": "93ecba49bd35ee65d12596d3d7f28863a63dd8fe",
   "official": true,
   "supported_model_ids": [],
-  "signal_contracts": [],
+  "signal_contracts": [
+    {
+      "role": "water_level",
+      "key": "water_amount",
+      "unit": null,
+      "semantics": "select when water.amount is CapabilitySetTypes; number when CapabilityNumber. Capability-dependent enum/range, not ml.",
+      "verified": false
+    },
+    {
+      "role": "cleaning_mode",
+      "key": "work_mode",
+      "unit": null,
+      "semantics": "select options from clean.work_mode.types; registry disabled by default; presence depends on capability.",
+      "verified": false
+    },
+    {
+      "role": "passes",
+      "key": "clean_count",
+      "unit": null,
+      "semantics": "number uses clean.count capability, range 1..4, disabled by default. Setting does not prove completed passes.",
+      "verified": false
+    }
+  ],
   "hardware_verified": false,
   "provenance": [
     {
@@ -12,6 +34,18 @@
       "date": "2026-09-05",
       "type": "integration_code",
       "claim": "HA Core 2026.9.0; inventory only, no hardware verification."
+    },
+    {
+      "url": "https://github.com/home-assistant/core/blob/93ecba49bd35ee65d12596d3d7f28863a63dd8fe/homeassistant/components/ecovacs/select.py",
+      "date": "2026-09-05",
+      "type": "integration_code",
+      "claim": "Root reviewed exact entity descriptions and capability guards. Source contract only; no per-model hardware validation or consumption coefficients."
+    },
+    {
+      "url": "https://github.com/home-assistant/core/blob/93ecba49bd35ee65d12596d3d7f28863a63dd8fe/homeassistant/components/ecovacs/number.py",
+      "date": "2026-09-05",
+      "type": "integration_code",
+      "claim": "Root reviewed exact entity descriptions and capability guards. Source contract only; no per-model hardware validation or consumption coefficients."
     }
   ],
   "confidence": "unknown",
@@ -19,6 +53,7 @@
     "Per-model firmware and regional signal presence",
     "Minimum supported upstream version not established",
     "No sanitized real hardware fixture",
-    "Model-specific bindings require review"
+    "Model-specific bindings require review",
+    "This pinned development commit is not evidence of behavior in an installed HA version; model/firmware and actual exposed options require validation."
   ]
 }
