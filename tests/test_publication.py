@@ -20,4 +20,6 @@ class PublicationTests(unittest.TestCase):
         self.assertTrue(all(set(finding) == {"path", "rule", "lines", "redacted"} for finding in report["findings"]))
         self.assertFalse(report["findings"])
         self.assertTrue(report["safe_for_review"])
-        self.assertIn("docs/publication-prep-2026-09-05.md", report["candidate_files"]["untracked"])
+        # The prep note was committed on 2026-09-05; a clean CI checkout has no untracked files.
+        candidates = report["candidate_files"]["tracked"] + report["candidate_files"]["untracked"]
+        self.assertIn("docs/publication-prep-2026-09-05.md", candidates)
