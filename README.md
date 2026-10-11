@@ -2,7 +2,7 @@
 
 An open-data project for water and detergent consumption of mopping robots, independent of Home Assistant and usable by other applications.
 
-**Pre-publication local dataset. Universal consumption coverage is incomplete.** The initial collection contains 134 researched model records, 23 integration inventory records and four manufacturer-declared wash quantities and five partial settings catalogues. There are no approved consumption profiles and no submitted empirical measurements. The 356 MIoT protocol specifications are an unresolved inventory, not 356 verified retail mopping robots.
+**Research dataset. Universal consumption coverage is incomplete.** The initial collection contains 134 researched model records, 23 integration inventory records and four manufacturer-declared wash quantities and five partial settings catalogues. There are no approved consumption profiles and no submitted empirical measurements. The 356 MIoT protocol specifications are an unresolved inventory, not 356 verified retail mopping robots.
 
 ## Data layers
 
@@ -50,8 +50,10 @@ Original project code is MIT licensed (LICENSE). Original database organization 
 
 Look up your model in [coverage.csv](reports/coverage.csv), inspect its sources and report missing or incorrect settings. Contributions for any model are welcome, including a single well-documented mode. See [LLM-assisted contribution guidance](protocols/llm-assisted-contribution.md). LLM-generated estimates remain proposals until independently verified.
 
-## Publication candidate and public intake
+## Public repository and maintained intake
 
-The proposed GitHub repository slug is `MacSiem/vacuum-consumption-data`. It is a local publication candidate only: no remote repository or public URL exists yet, so do not link issue reporters to it until an authorized release turn has created and verified it.
+The public repository is [MacSiem/vacuum-consumption-data](https://github.com/MacSiem/vacuum-consumption-data). Its issue forms provide manual evidence intake; a public submission is not an approved consumption profile.
 
-When the repository is public, use the **Sanitized evidence intake** issue form for model, source, integration and replay evidence. It requests only the smallest relevant public excerpt: model/SKU and region, firmware, integration/version, reservoir, entity domain and canonical property, plus relative timestamps, ordering and durations for relevant transitions. It never requests raw Diagnostics, credentials, device/account identifiers, maps, room names, MAC/IP addresses or absolute timestamps. Manufacturer declarations, source-only bindings and synthetic data remain non-runtime; an approved profile still requires the reviewed empirical evidence described in the calibration protocol.
+Use the **Sanitized evidence intake** issue form for model, source, integration and replay evidence. It requests only the smallest relevant public excerpt: model/SKU and region, firmware, integration/version, reservoir, entity domain and canonical property, plus relative timestamps, ordering and durations for relevant transitions. It never requests raw Diagnostics, credentials, device/account identifiers, maps, room names, MAC/IP addresses or absolute timestamps. Manufacturer declarations, source-only bindings and synthetic data remain non-runtime; an approved profile still requires the reviewed empirical evidence described in the calibration protocol.
+
+For a confirmed independent cycle measurement exported by Vacuum Water Monitor, use the [**Measurement** form](https://github.com/MacSiem/vacuum-consumption-data/issues/new?template=measurement.yml) and review the exact packet and CC BY 4.0 consent before submitting. Follow the [confirmed-measurement instructions](CONTRIBUTING.md); do not attach raw household histories or Diagnostics. Measurements with unknown technical fields may enter manual review, but remain ineligible for runtime until separately qualified.
