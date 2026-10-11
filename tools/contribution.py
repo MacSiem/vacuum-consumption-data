@@ -43,7 +43,7 @@ PACKET_KEYS = {'schema_version','kind','contribution_id','licence','publication_
 
 
 def _positive(value):
-    if type(value) not in (int,float) or not math.isfinite(value) or value <= 0:
+    if type(value) not in (int,float) or value <= 0 or value > 1e100 or not math.isfinite(value):
         raise ValueError('A finite positive physical quantity is required')
     return value
 
@@ -72,20 +72,22 @@ def _version(value):
 def _public_context(context, public_catalog):
     if not isinstance(context,dict) or not isinstance(public_catalog,dict):
         raise ValueError('Recorded context and public model catalog are required')
-    model = public_catalog.get(context.get('model_id'))
+    if type(context.get('model_id')) is not str:
+        raise ValueError('A catalog model identifier is required')
+    model = public_catalog.get(context['model_id'])
     if not isinstance(model,dict):
         raise ValueError('Model is not in the reviewed public catalog')
     integration, reservoir = context.get('integration_id'), context.get('reservoir')
     if (type(integration) is not str or integration not in model.get('integration_adapters',model.get('integration_candidates',[]))
-            or reservoir not in {'dock_clean','dock_dirty','robot_clean','robot_dirty','detergent'}
+            or type(reservoir) is not str or reservoir not in {'dock_clean','dock_dirty','robot_clean','robot_dirty','detergent'}
             or reservoir not in model.get('reservoirs_ml',{})):
         raise ValueError('Select a catalog integration and reservoir')
     settings = context.get('settings')
     if not isinstance(settings,dict):
         raise ValueError('Historical settings are required')
     return {'model_id':context['model_id'],
-        'sku':context.get('sku') if context.get('sku') in {'EU','US','UK','CN','AU','global','not_applicable'} else None,
-        'dock_variant':context.get('dock_variant') if context.get('dock_variant') in {'tank','plumbed','no_dock','not_applicable'} else None,
+        'sku':context.get('sku') if type(context.get('sku')) is str and context.get('sku') in {'EU','US','UK','CN','AU','global','not_applicable'} else None,
+        'dock_variant':context.get('dock_variant') if type(context.get('dock_variant')) is str and context.get('dock_variant') in {'tank','plumbed','no_dock','not_applicable'} else None,
         'firmware':_version(context.get('firmware')), 'integration_id':integration,
         'integration_version':_version(context.get('integration_version')),
         'reservoir':reservoir, 'action':'whole_cycle',

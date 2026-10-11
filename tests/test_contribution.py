@@ -33,12 +33,12 @@ class ContributionTests(unittest.TestCase):
         self.assertFalse(result['runtime_eligible'])
 
     def test_identifiers_dates_urls_and_unsupported_text_never_escape(self):
-        s=sample();s.update(ts=123,token='secret',map='Kitchen',ip='192.168.1.9')
-        s['context'].update(sku='my-house-id',firmware='192.168.1.9',account='private')
+        s=sample();s.update(ts=123,token='secret',map='Kitchen',ip='192.168.1.9',account='private-account-value')
+        s['context'].update(sku='my-house-id',firmware='192.168.1.9',account='private-account-value')
         s['context']['settings']['route']='Kitchen private room'
         packet=c.build_confirmed_contribution([s],public_catalog=CATALOG)
         text=json.dumps(packet)
-        for forbidden in ('local.private','vacuum.house','my-house-id','Kitchen','192.168','secret','account'):
+        for forbidden in ('local.private','vacuum.house','my-house-id','Kitchen','192.168','secret','private-account-value'):
             self.assertNotIn(forbidden,text)
         ctx=packet['samples'][0]['context']
         self.assertIsNone(ctx['sku']);self.assertIsNone(ctx['firmware'])
