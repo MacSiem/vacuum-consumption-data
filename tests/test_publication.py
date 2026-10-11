@@ -20,4 +20,6 @@ class PublicationTests(unittest.TestCase):
         self.assertTrue(all(set(finding) == {"path", "rule", "lines", "redacted"} for finding in report["findings"]))
         self.assertFalse(report["findings"])
         self.assertTrue(report["safe_for_review"])
-        self.assertIn("docs/publication-prep-2026-09-05.md", report["candidate_files"]["untracked"])
+        # The document stays in the candidate after it is committed; staging
+        # status is not a publication requirement.
+        self.assertIn("docs/publication-prep-2026-09-05.md", report["file_sha256"])
