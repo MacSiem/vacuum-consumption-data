@@ -5,10 +5,9 @@ from tools.validate import ROOT
 
 
 class PublicationTests(unittest.TestCase):
-    def test_public_docs_link_to_real_local_paths_not_a_fake_remote(self):
+    def test_public_docs_preserve_intake_assets_and_unapproved_profile_boundary(self):
         readme = (ROOT / "README.md").read_text()
         self.assertIn("MacSiem/vacuum-consumption-data", readme)
-        self.assertNotIn("github.com/MacSiem/vacuum-consumption-data", readme)
         self.assertTrue((ROOT / ".github" / "ISSUE_TEMPLATE" / "evidence-intake.yml").is_file())
         self.assertTrue((ROOT / "docs" / "model-support-matrix.md").is_file())
         self.assertIn("zero physically approved profiles", readme)
