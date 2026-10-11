@@ -5,6 +5,11 @@ body:
     attributes:
       value: "Do not attach raw Diagnostics, maps, serial numbers, tokens or household identifiers."
   - type: textarea
+    id: packet
+    attributes:
+      label: Reviewed confirmed-measurement JSON packet (optional)
+      description: Attach the exact reviewed download, or paste its JSON. No raw Diagnostics or private histories.
+  - type: textarea
     id: context
     attributes:
       label: Model, SKU, firmware, integration, action and settings
@@ -27,5 +32,5 @@ body:
     attributes:
       label: Sharing
       options:
-        - label: I can share this information under the contribution terms and checked it for private data.
+        - label: I can publish this measurement under CC BY 4.0, reviewed the exact contents for private data, and understand GitHub exposes my account and public copies may remain.
           required: true
