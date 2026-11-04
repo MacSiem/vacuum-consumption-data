@@ -31,7 +31,9 @@
     "Full cleaning mode/water intensity/route/pass choices",
     "Allowed wash intervals beyond default",
     "HA enum and transient carpet-state exposure",
-    "Dynamic wash volume and firmware applicability"
+    "Dynamic wash volume and firmware applicability",
+    "Translated labels are research normalizations, not confirmed API enums.",
+    "Exact SKU/firmware and HA enum/completion bindings remain unverified."
   ],
   "provenance": [
     {
@@ -39,6 +41,18 @@
       "date": "2026-09-05",
       "type": "manufacturer",
       "claim": "Qrevo Pro FAQ lists four wash modes and carpet policies. Smart adapts water/time to dirt; default wash interval 15 minutes, other values not enumerated. Rise stops water on carpet; Cross traverses without cleaning."
+    },
+    {
+      "url": "https://help.roborock.com/de/product/roborock-qrevo-pro-message?category=faqs",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "Named Qrevo Pro FAQ has Intelligent/Light/Normal/Deep washing, Smart dirt adaptation, carpet policies; no wash ml."
+    },
+    {
+      "url": "https://us.roborock.com/pages/roborock-q-revo-pro",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "Named Pro has30 water-output options, lift/carpet controls, optional rewash/remop and a distinct plumbing variant; output labels and HA mappings not specified."
     }
   ]
 }

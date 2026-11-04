@@ -1,0 +1,74 @@
+{
+  "id": "settings.tapo_rv50_pro_omni",
+  "kind": "settings_catalog",
+  "model_id": "tapo_rv50_pro_omni",
+  "dimensions": [
+    {
+      "name": "water_level",
+      "options": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "wash_frequency",
+      "options": [
+        "by_room",
+        "time_10_min",
+        "time_15_min",
+        "time_20_min",
+        "time_25_min"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "wash_mode",
+      "options": [
+        "smart",
+        "water_saved",
+        "daily",
+        "deep"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "wash_temperature",
+      "options": [
+        "standard",
+        "hot_water"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "detergent_mode",
+      "options": [
+        "auto_enabled",
+        "auto_disabled"
+      ],
+      "ha_value_mapping_verified": false
+    }
+  ],
+  "rules": [],
+  "relationships_complete": false,
+  "confidence": "declared",
+  "unknowns": [
+    "US FAQ option set is conditional by model/version; do not union with AU non-Pro8/10/12min.",
+    "Exact SKU/firmware and HA enum/completion bindings remain unverified."
+  ],
+  "provenance": [
+    {
+      "url": "https://www.tapo.com/us/faqs/dock-settings-for-tapo-robot-vacuum/",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "Wash by room or10/15/20/25min; Smart/Water-Saved/Daily/Deep; Standard/Hot; auto detergent toggle. Article explicitly warns model-dependent support."
+    },
+    {
+      "url": "https://www.tapo.com/uk/product/robot-vacuum/tapo-rv50-pro-omni/v1/",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "RV50 Pro v1 UK:95ml robot,5L clean/4L dirty dock;3 output levels;60C wash; dirt-driven rewash/remop; mop lift/removal."
+    }
+  ]
+}

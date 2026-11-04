@@ -2,7 +2,7 @@
 
 An open-data project for water and detergent consumption of mopping robots, independent of Home Assistant and usable by other applications.
 
-**Research dataset. Universal consumption coverage is incomplete.** The initial collection contains 134 researched model records, 23 integration inventory records and four manufacturer-declared wash quantities and five partial settings catalogues. There are no approved consumption profiles and no submitted empirical measurements. The 356 MIoT protocol specifications are an unresolved inventory, not 356 verified retail mopping robots.
+**Research dataset. Universal consumption coverage is incomplete.** The current collection contains 136 researched model records, 23 integration inventory records, four manufacturer-declared wash quantities and eleven partial settings catalogues. The initial September collection had 134 models and five settings catalogues. There are no approved consumption profiles and no submitted empirical measurements. The 356 MIoT protocol specifications are an unresolved inventory, not 356 verified retail mopping robots.
 
 ## Data layers
 
@@ -21,7 +21,13 @@ Keys include model, SKU, dock, firmware, integration version, reservoir, action 
 
 `source_type` and `estimate_readiness` are separate. A user measurement, manufacturer declaration, derived estimate and unknown must never be conflated. A usable estimate carries its source/basis, unit, method, named-model applicability and limitation; confidence is a justified category, never an invented percentage. Tank capacity is not cycle consumption, and family evidence does not prove an exact SKU.
 
-The current schema-v2 bundle has zero physically approved profiles. It contains two source-backed, limited Xiaomi H50 Pro mop-wash estimates (180 ml first wash; 120 ml mid-task wash); both require explicit action identification and do not prove an HA completion counter. Roborock has the strongest documented integration-signal inventory (six scoped contracts), but no public physical consumption profile, so its runtime consumption estimate is unknown. See the [model support matrix](docs/model-support-matrix.md) and [estimate consumer contract](docs/estimate-consumer-contract.md).
+The full schema-v2 bundle has zero physically approved profiles. It contains two source-backed, limited Xiaomi H50 Pro mop-wash estimates (180 ml first wash; 120 ml mid-task wash), plus two Concept VR4050 estimates (130 ml standard; 215 ml deep) marked `calibration_only`. Only the H50 records retain `labeled_runtime_estimate` readiness; neither readiness proves an HA completion counter. The current VWM importer requires the explicit projection described in the [consumer contract](docs/estimate-consumer-contract.md), rather than the full bundle. Roborock has the strongest documented integration-signal inventory (six scoped contracts), but no public physical consumption profile, so its runtime consumption estimate is unknown. See the [model support matrix](docs/model-support-matrix.md) and [estimate consumer contract](docs/estimate-consumer-contract.md).
+
+## November source update
+
+The [research inventory](data/inventory/research-2026-11-04.json) records 35 sources and 17 findings: 18 of the 134 models in the inspected VWM catalog received direct research; the other 116 retain explicit family gaps. New public review reports, conditional settings, and variant-specific capacities are stored in the named [model records](data/models) and [settings catalogs](data/settings). These are source-limited research additions, not new physical measurements, approved rates, or worldwide coverage. Q8 Max+ is an additional research model; T90 was already in the VWM catalog but is new to this dataset branch.
+
+Review quantities such as the Q8 Max+ high-water report and S7 MaxV/5AE wash reports remain provenance and research findings. The illustrative eufy S1 500 ml scenario has no strict observation record because its reservoir boundary is unclear. The source inventory is retained canonically but is not included by `load_records()` in the bundle; model/settings provenance is included in the full bundle. A VWM consumption snapshot projects only approved profiles and eligible labeled estimates, so it does not contain the model/settings catalogs or research inventory.
 
 ## Local validation
 

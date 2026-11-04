@@ -22,6 +22,18 @@
       "date": "2026-09-05",
       "type": "manufacturer",
       "claim": "Root confirmed capacities (ml): dock_clean=4000, dock_dirty=3500; no consumption claim."
+    },
+    {
+      "url": "https://www.mova.tech/products/mova-v50-ultra-robot-vacuum",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "V50 Complete:50C thermo-fill, adaptive180→260rpm, opt-in CleanGenius rewash/remop,80C outlet wash with4 temperature choices, selectable regular/pet solution. No measured water dose."
+    },
+    {
+      "url": "https://forum.mova-tech.com/forum.php?mod=viewthread&tid=502",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "MOVA support: V50 internal refill follows configured backwash area, not internal tank water-level detection."
     }
   ],
   "confidence": "declared",

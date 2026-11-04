@@ -46,8 +46,8 @@
       "automatic_consumption_complete": false
     },
     {
-      "known_setting_dimensions": 4,
-      "known_option_values": 12,
+      "known_setting_dimensions": 6,
+      "known_option_values": 16,
       "setting_relationships_verified": false,
       "model_id": "concept_vr4050",
       "manufacturer": "Concept",
@@ -410,6 +410,20 @@
       "automatic_consumption_complete": false
     },
     {
+      "known_setting_dimensions": 1,
+      "known_option_values": 3,
+      "setting_relationships_verified": false,
+      "model_id": "ecovacs_deebot_t90_pro_omni",
+      "manufacturer": "Ecovacs",
+      "name": "DEEBOT T90 PRO OMNI",
+      "declared_quantities": 0,
+      "labeled_runtime_estimates": 0,
+      "measured_observations": 0,
+      "approved_profiles": 0,
+      "mode_action_inventory": "unknown",
+      "automatic_consumption_complete": false
+    },
+    {
       "known_setting_dimensions": 0,
       "known_option_values": 0,
       "setting_relationships_verified": false,
@@ -550,8 +564,8 @@
       "automatic_consumption_complete": false
     },
     {
-      "known_setting_dimensions": 3,
-      "known_option_values": 9,
+      "known_setting_dimensions": 5,
+      "known_option_values": 16,
       "setting_relationships_verified": false,
       "model_id": "eufy_x10_pro_omni",
       "manufacturer": "eufy",
@@ -903,6 +917,20 @@
       "known_setting_dimensions": 0,
       "known_option_values": 0,
       "setting_relationships_verified": false,
+      "model_id": "roborock_q8_max_plus",
+      "manufacturer": "Roborock",
+      "name": "Q8 Max+",
+      "declared_quantities": 0,
+      "labeled_runtime_estimates": 0,
+      "measured_observations": 0,
+      "approved_profiles": 0,
+      "mode_action_inventory": "unknown",
+      "automatic_consumption_complete": false
+    },
+    {
+      "known_setting_dimensions": 0,
+      "known_option_values": 0,
+      "setting_relationships_verified": false,
       "model_id": "roborock_q_revo",
       "manufacturer": "Roborock",
       "name": "Q Revo",
@@ -928,8 +956,8 @@
       "automatic_consumption_complete": false
     },
     {
-      "known_setting_dimensions": 0,
-      "known_option_values": 0,
+      "known_setting_dimensions": 5,
+      "known_option_values": 39,
       "setting_relationships_verified": false,
       "model_id": "roborock_qrevo_5ae",
       "manufacturer": "Roborock",
@@ -1166,8 +1194,8 @@
       "automatic_consumption_complete": false
     },
     {
-      "known_setting_dimensions": 0,
-      "known_option_values": 0,
+      "known_setting_dimensions": 2,
+      "known_option_values": 5,
       "setting_relationships_verified": false,
       "model_id": "roborock_qrevo_maxv",
       "manufacturer": "Roborock",
@@ -1320,8 +1348,8 @@
       "automatic_consumption_complete": false
     },
     {
-      "known_setting_dimensions": 0,
-      "known_option_values": 0,
+      "known_setting_dimensions": 2,
+      "known_option_values": 2,
       "setting_relationships_verified": false,
       "model_id": "roborock_s7_maxv",
       "manufacturer": "Roborock",
@@ -1614,8 +1642,8 @@
       "automatic_consumption_complete": false
     },
     {
-      "known_setting_dimensions": 0,
-      "known_option_values": 0,
+      "known_setting_dimensions": 2,
+      "known_option_values": 9,
       "setting_relationships_verified": false,
       "model_id": "tapo_rv50_omni",
       "manufacturer": "Tapo",
@@ -1628,8 +1656,8 @@
       "automatic_consumption_complete": false
     },
     {
-      "known_setting_dimensions": 0,
-      "known_option_values": 0,
+      "known_setting_dimensions": 5,
+      "known_option_values": 16,
       "setting_relationships_verified": false,
       "model_id": "tapo_rv50_pro_omni",
       "manufacturer": "Tapo",
@@ -2137,7 +2165,7 @@
     }
   ],
   "coverage_denominators": {
-    "dataset_models": 134,
+    "dataset_models": 136,
     "miot_protocol_ids": 356,
     "retail_models": "unknown",
     "regions_unsearched": "unknown",

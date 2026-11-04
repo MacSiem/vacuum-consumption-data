@@ -29,6 +29,12 @@
       "date": "2026-09-05",
       "type": "manufacturer",
       "claim": "Model/reference source; reservoir values only adopted where separately confirmed in root review."
+    },
+    {
+      "url": "https://robotobzor.ru/obzory/roborock/roborock-s7-maxv-ultra.html",
+      "date": "2026-11-04",
+      "type": "empirical",
+      "claim": "Around250ml per deep rinse, with warning robot-tank refill is another use. In a70m² apartment tank lasted2 whole runs. Instrument/resolution and concurrent refill separation unspecified."
     }
   ],
   "confidence": "unknown",

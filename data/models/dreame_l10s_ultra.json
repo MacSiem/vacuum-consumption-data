@@ -29,6 +29,12 @@
       "date": "2026-09-05",
       "type": "integration_code",
       "claim": "Named model in reviewed source; unknown values are not compatibility or capacity claims."
+    },
+    {
+      "url": "https://www.dreametech.com/products/dreamebot-l10s-ultra",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "80ml robot and2.5L dock, adjustable water level, automatic wash/refill; up to200m² marketing coverage is not a floor-rate observation."
     }
   ],
   "confidence": "unknown",

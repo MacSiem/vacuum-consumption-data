@@ -38,6 +38,22 @@
         "20_minutes"
       ],
       "ha_value_mapping_verified": false
+    },
+    {
+      "name": "carpet_policy",
+      "options": [
+        "adapt",
+        "avoid",
+        "ignore"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "passes",
+      "options": [
+        "cross_clean_two_directions"
+      ],
+      "ha_value_mapping_verified": false
     }
   ],
   "rules": [],
@@ -48,14 +64,22 @@
     "Route/cross-clean interactions",
     "Allowed combinations and restrictions",
     "Area-dependent changes and floor dose",
-    "Firmware/SKU equivalence"
+    "Firmware/SKU equivalence",
+    "At15min manufacturer recommends water levels1/2; do not encode recommendation as prohibited high setting.",
+    "Exact SKU/firmware and HA enum/completion bindings remain unverified."
   ],
   "provenance": [
     {
       "url": "https://www.my-concept.sk/img.asp?attid=56409021",
       "date": "2026-09-05",
       "type": "manufacturer",
-      "claim": "Printed manual pages 100\u2013101 list four cleaning modes, three water levels, two wash modes and three return intervals. Their Cartesian product is not verified."
+      "claim": "Printed manual pages 100–101 list four cleaning modes, three water levels, two wash modes and three return intervals. Their Cartesian product is not verified."
+    },
+    {
+      "url": "https://www.my-concept.sk/img.asp?attid=56409021",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "Standard wash130ml/91s; deep215ml/145s. Refill/wash10/15/20min, default15; 3 wetness levels; recommended low/medium at15min. Cross cleaning repeats area twice."
     }
   ]
 }

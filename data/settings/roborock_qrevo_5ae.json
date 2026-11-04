@@ -1,0 +1,93 @@
+{
+  "id": "settings.roborock_qrevo_5ae",
+  "kind": "settings_catalog",
+  "model_id": "roborock_qrevo_5ae",
+  "dimensions": [
+    {
+      "name": "water_level",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "passes",
+      "options": [
+        "1",
+        "2"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "route",
+      "options": [
+        "fast",
+        "standard",
+        "deep",
+        "deep_plus"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "wash_mode",
+      "options": [
+        "deep"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "wash_frequency",
+      "options": [
+        "10_minutes_minimum",
+        "by_room"
+      ],
+      "ha_value_mapping_verified": false
+    }
+  ],
+  "rules": [],
+  "relationships_complete": false,
+  "confidence": "declared",
+  "unknowns": [
+    "Names normalized from Polish review, not verified API enum values.",
+    "Single reviewer firmware02.13.24/app4.53.08; other firmware/SKU applicability unknown.",
+    "Route overlap is not proof whether HA area already counts repeat exposure.",
+    "Deep-wash150–160ml lacks instrument, resolution, sample count and isolated robot-refill accounting."
+  ],
+  "provenance": [
+    {
+      "url": "https://www.agdmaniak.pl/124755/roborock-qrevo-5ae-test/amp/",
+      "date": "2026-11-04",
+      "type": "empirical",
+      "claim": "Review describes1–30 output,1–2 repetitions, four routes and minimum10min/by-room wash; deep wash≈150–160ml/220s."
+    }
+  ]
+}

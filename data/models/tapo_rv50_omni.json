@@ -23,6 +23,18 @@
       "date": "2026-09-05",
       "type": "manufacturer",
       "claim": "Model/reference source; reservoir values only adopted where separately confirmed in root review."
+    },
+    {
+      "url": "https://im.com.au/cleaning/tapo-rv50-omni-a-no-frills-no-fuss-robovac/",
+      "date": "2026-11-04",
+      "type": "empirical",
+      "claim": "AU RV50 non-Pro firmware1.2.3 Build260304 Rel022612; app3.21.112; wash8/10/12min and cold wash reported, versus broader manufacturer FAQ10/15/20/25. Approx300ml internal tank has no measurement method."
+    },
+    {
+      "url": "https://www.tapo.com/en/manuals/839",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "RV50 Omni guide describes mid-task and final wash, resume after recharge, and no-dock-map wash restriction. Generic page contains hot-wash troubleshooting; cannot prove non-Pro heater."
     }
   ],
   "confidence": "unknown",

@@ -2,7 +2,7 @@ known_setting_dimensions,known_option_values,setting_relationships_verified,mode
 0,0,False,cecotec_conga_3290,Cecotec,Conga 3290,0,0,0,0,unknown,False
 0,0,False,cecotec_conga_3790,Cecotec,Conga 3790,0,0,0,0,unknown,False
 0,0,False,commodore_cvr_200,Commodore,CVR 200,0,0,0,0,unknown,False
-4,12,False,concept_vr4050,Concept,VR4050,2,0,0,0,unknown,False
+6,16,False,concept_vr4050,Concept,VR4050,2,0,0,0,unknown,False
 0,0,False,dreame_d10s_plus,Dreame,D10s Plus,0,0,0,0,unknown,False
 0,0,False,dreame_d10s_pro,Dreame,D10s Pro,0,0,0,0,unknown,False
 0,0,False,dreame_d9,Dreame,D9,0,0,0,0,unknown,False
@@ -28,6 +28,7 @@ known_setting_dimensions,known_option_values,setting_relationships_verified,mode
 0,0,False,ecovacs_deebot_n30_pro_omni,Ecovacs,ECOVACS DEEBOT N30 PRO OMNI,0,0,0,0,unknown,False
 0,0,False,ecovacs_deebot_t30_pro_omni,Ecovacs,ECOVACS DEEBOT T30 PRO OMNI,0,0,0,0,unknown,False
 0,0,False,ecovacs_deebot_t50_pro_omni,Ecovacs,ECOVACS DEEBOT T50 PRO OMNI,0,0,0,0,unknown,False
+1,3,False,ecovacs_deebot_t90_pro_omni,Ecovacs,DEEBOT T90 PRO OMNI,0,0,0,0,unknown,False
 0,0,False,ecovacs_deebot_x1_omni,Ecovacs,ECOVACS DEEBOT X1 OMNI,0,0,0,0,unknown,False
 0,0,False,ecovacs_deebot_x2_omni,Ecovacs,ECOVACS DEEBOT X2 OMNI,0,0,0,0,unknown,False
 0,0,False,ecovacs_deebot_x5_hybrid,Ecovacs,ECOVACS DEEBOT X5 HYBRID,0,0,0,0,unknown,False
@@ -38,7 +39,7 @@ known_setting_dimensions,known_option_values,setting_relationships_verified,mode
 0,0,False,eufy_omni_e28,eufy,Omni E28,0,0,0,0,unknown,False
 0,0,False,eufy_omni_s1,eufy,Omni S1,0,0,0,0,unknown,False
 0,0,False,eufy_omni_s2,eufy,Omni S2,0,0,0,0,unknown,False
-3,9,False,eufy_x10_pro_omni,eufy,X10 Pro Omni,0,0,0,0,unknown,False
+5,16,False,eufy_x10_pro_omni,eufy,X10 Pro Omni,0,0,0,0,unknown,False
 0,0,False,eureka_e20_evo_plus,Eureka,E20 Evo Plus,0,0,0,0,unknown,False
 0,0,False,eureka_e20_plus,Eureka,E20 Plus,0,0,0,0,unknown,False
 0,0,False,eureka_j12_ultra,Eureka,J12 Ultra,0,0,0,0,unknown,False
@@ -63,9 +64,10 @@ known_setting_dimensions,known_option_values,setting_relationships_verified,mode
 0,0,False,proscenic_m6_pro,Proscenic,M6 Pro,0,0,0,0,unknown,False
 0,0,False,roborock_q5_max_plus,Roborock,Q5 Max+,0,0,0,0,unknown,False
 0,0,False,roborock_q7_max,Roborock,Q7 Max,0,0,0,0,unknown,False
+0,0,False,roborock_q8_max_plus,Roborock,Q8 Max+,0,0,0,0,unknown,False
 0,0,False,roborock_q_revo,Roborock,Q Revo,0,0,0,0,unknown,False
 0,0,False,roborock_qrevo_2_pro,Roborock,Qrevo 2 Pro,0,0,0,0,unknown,False
-0,0,False,roborock_qrevo_5ae,Roborock,Qrevo 5AE,0,0,0,0,unknown,False
+5,39,False,roborock_qrevo_5ae,Roborock,Qrevo 5AE,0,0,0,0,unknown,False
 0,0,False,roborock_qrevo_curv,Roborock,Qrevo Curv,0,0,0,0,unknown,False
 0,0,False,roborock_qrevo_curv_2_flow,Roborock,Qrevo Curv 2 Flow,0,0,0,0,unknown,False
 0,0,False,roborock_qrevo_curv_2_pro,Roborock,Qrevo Curv 2 Pro,0,0,0,0,unknown,False
@@ -82,7 +84,7 @@ known_setting_dimensions,known_option_values,setting_relationships_verified,mode
 0,0,False,roborock_qrevo_edgec,Roborock,Qrevo EdgeC,0,0,0,0,unknown,False
 0,0,False,roborock_qrevo_edget,Roborock,Qrevo EdgeT,0,0,0,0,unknown,False
 0,0,False,roborock_qrevo_master,Roborock,Qrevo Master,0,0,0,0,unknown,False
-0,0,False,roborock_qrevo_maxv,Roborock,Qrevo MaxV,0,0,0,0,unknown,False
+2,5,False,roborock_qrevo_maxv,Roborock,Qrevo MaxV,0,0,0,0,unknown,False
 0,0,False,roborock_qrevo_plus,Roborock,Qrevo Plus,0,0,0,0,unknown,False
 2,8,False,roborock_qrevo_pro,Roborock,Qrevo Pro,0,0,0,0,unknown,False
 0,0,False,roborock_qrevo_s,Roborock,Qrevo S,0,0,0,0,unknown,False
@@ -93,7 +95,7 @@ known_setting_dimensions,known_option_values,setting_relationships_verified,mode
 0,0,False,roborock_s6,Roborock,S6,0,0,0,0,unknown,False
 0,0,False,roborock_s6_pure,Roborock,S6 Pure,0,0,0,0,unknown,False
 0,0,False,roborock_s7,Roborock,S7,0,0,0,0,unknown,False
-0,0,False,roborock_s7_maxv,Roborock,S7 MaxV,0,0,0,0,unknown,False
+2,2,False,roborock_s7_maxv,Roborock,S7 MaxV,0,0,0,0,unknown,False
 0,0,False,roborock_s7_pro_ultra,Roborock,S7 Pro Ultra,0,0,0,0,unknown,False
 1,3,False,roborock_s8_maxv_ultra,Roborock,S8 MaxV Ultra,0,0,0,0,unknown,False
 0,0,False,roborock_s8_pro_ultra,Roborock,S8 Pro Ultra,0,0,0,0,unknown,False
@@ -114,8 +116,8 @@ known_setting_dimensions,known_option_values,setting_relationships_verified,mode
 0,0,False,tapo_rv30_max_plus,Tapo,RV30 Max Plus,0,0,0,0,unknown,False
 0,0,False,tapo_rv30_max_plus_gen_2,Tapo,RV30 Max Plus Gen 2,0,0,0,0,unknown,False
 0,0,False,tapo_rv30_plus,Tapo,RV30 Plus,0,0,0,0,unknown,False
-0,0,False,tapo_rv50_omni,Tapo,RV50 Omni,0,0,0,0,unknown,False
-0,0,False,tapo_rv50_pro_omni,Tapo,RV50 Pro Omni,0,0,0,0,unknown,False
+2,9,False,tapo_rv50_omni,Tapo,RV50 Omni,0,0,0,0,unknown,False
+5,16,False,tapo_rv50_pro_omni,Tapo,RV50 Pro Omni,0,0,0,0,unknown,False
 0,0,False,viomi_se,Viomi,SE,0,0,0,0,unknown,False
 0,0,False,viomi_v6,Viomi,V6,0,0,0,0,unknown,False
 0,0,False,xiaomi_1c,Xiaomi,1C,0,0,0,0,unknown,False

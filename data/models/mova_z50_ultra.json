@@ -22,6 +22,18 @@
       "date": "2026-09-05",
       "type": "manufacturer",
       "claim": "Root confirmed capacities (ml): dock_clean=4500, dock_dirty=4000; no consumption claim."
+    },
+    {
+      "url": "https://www.mova.tech/products/mova-z50-ultra-robot-vacuum",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "Track-type warm-water circulation; mop-condition AI triggers rewash, turbidity adjusts wash temperature4modes;75C station wash. No flow rate."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=e0kyCj7y_2c",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "Official MOVA Global description: continuous36C fresh-water spray, dirty collection,75C dock wash. Nominal temperatures do not imply ml/min."
     }
   ],
   "confidence": "declared",

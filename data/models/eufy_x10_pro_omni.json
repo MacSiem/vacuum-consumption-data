@@ -20,6 +20,18 @@
       "date": "2026-09-05",
       "type": "manufacturer",
       "claim": "Named model in reviewed source; unknown values are not compatibility or capacity claims."
+    },
+    {
+      "url": "https://www.allround-pc.com/artikel/eufy-x10-pro-omni-test-saugroboter-preis-leistungstipp",
+      "date": "2026-11-04",
+      "type": "empirical",
+      "claim": "Standard/medium reportedly used about50% tank; author extrapolates3L lasts150–170m². No measurement resolution or full raw exposure; report remains approximate."
+    },
+    {
+      "url": "https://service.eufy.com/article-description/Why-is-the-X10-Pro-Omni-not-wetting-the-floor-during-mopping",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "Pad wear changes wetting; a room over20m² may outlast pad wetness, so time-based washing is recommended."
     }
   ],
   "confidence": "unknown",

@@ -1,0 +1,38 @@
+{
+  "id": "settings.roborock_qrevo_maxv",
+  "kind": "settings_catalog",
+  "model_id": "roborock_qrevo_maxv",
+  "dimensions": [
+    {
+      "name": "wash_mode",
+      "options": [
+        "smart",
+        "light",
+        "balanced",
+        "deep"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "wash_frequency",
+      "options": [
+        "15_minutes_default"
+      ],
+      "ha_value_mapping_verified": false
+    }
+  ],
+  "rules": [],
+  "relationships_complete": false,
+  "confidence": "declared",
+  "unknowns": [
+    "Exact SKU/firmware and HA enum/completion bindings remain unverified."
+  ],
+  "provenance": [
+    {
+      "url": "https://help.roborock.com/us/product/roborock-qrevo-maxv-message?category=faqs",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "Qrevo MaxV default return15min; Smart/Light/Balanced/Deep wash; Pro/MaxV hot wash and dirt-driven remop differ from Plus."
+    }
+  ]
+}

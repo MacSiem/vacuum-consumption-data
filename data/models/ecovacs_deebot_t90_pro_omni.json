@@ -1,0 +1,35 @@
+{
+  "id": "ecovacs_deebot_t90_pro_omni",
+  "kind": "model",
+  "manufacturer": "Ecovacs",
+  "name": "DEEBOT T90 PRO OMNI",
+  "public_model_ids": [
+    "DEEBOT T90 PRO OMNI"
+  ],
+  "regional_skus": [],
+  "integration_candidates": [
+    "ecovacs"
+  ],
+  "reservoirs_ml": {
+    "dock_clean": 4000,
+    "dock_dirty": 2200,
+    "robot_clean": 110,
+    "robot_dirty": null,
+    "detergent": null
+  },
+  "inventory_status": "researched_partial",
+  "provenance": [
+    {
+      "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "US manufacturer page identifies110ml robot clean tank and4000/2200ml dock tanks; exact #26 hardware/SKU equivalence unknown."
+    }
+  ],
+  "confidence": "declared",
+  "unknowns": [
+    "US source does not certify reported k2iwaq/firmware1.103.0 regional equivalence.",
+    "No measured flow/wash rate or physical validation; robot_dirty and detergent capacities unknown.",
+    "Manufacturer spec page mixes generic field labels; verify50-level setting on exact firmware before mapping."
+  ]
+}

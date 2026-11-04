@@ -24,6 +24,12 @@
       "date": "2026-09-05",
       "type": "manufacturer",
       "claim": "Root confirmed capacities (ml): robot_clean=200; no consumption claim."
+    },
+    {
+      "url": "https://www.mi.com/ae-en/product/xiaomi-robot-vacuum-x10/",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "200±5ml capacity measured on3 prototypes and >80min standard mopping in4×5m test space; stopping criterion is not stated as water-empty. No safe rate quotient."
     }
   ],
   "confidence": "declared",

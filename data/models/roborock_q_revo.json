@@ -29,6 +29,12 @@
       "date": "2026-09-05",
       "type": "manufacturer",
       "claim": "Model/reference source; reservoir values only adopted where separately confirmed in root review."
+    },
+    {
+      "url": "https://us.roborock.com/pages/roborock-q-revo-pro",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "OriginalQrevo comparison explicitly distinguishes room-temperature washing fromPro/MaxV; not an action volume. Canonical existing key is roborock_q_revo."
     }
   ],
   "confidence": "unknown",

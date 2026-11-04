@@ -36,14 +36,22 @@
     "Pass counts available per room",
     "Wash mode/temperature dependencies",
     "Actual floor volume per mode",
-    "Per-room setting transitions and firmware applicability"
+    "Per-room setting transitions and firmware applicability",
+    "First-time action versus pre-task identity still needs binding; final wash dose unknown.",
+    "Exact SKU/firmware and HA enum/completion bindings remain unverified."
   ],
   "provenance": [
     {
       "url": "https://www.mi.com/global/support/faq/details/KA-673648/",
       "date": "2026-09-05",
       "type": "manufacturer",
-      "claim": "FAQ Q26/Q40: mop-only and vacuum-and-mop pre-wet, return by 5/8/10 m\u00b2 or minutes, post-task wash. App Q18 describes per-room mode/pass configuration without full values. Vacuum-only is also documented."
+      "claim": "FAQ Q26/Q40: mop-only and vacuum-and-mop pre-wet, return by 5/8/10 m² or minutes, post-task wash. App Q18 describes per-room mode/pass configuration without full values. Vacuum-only is also documented."
+    },
+    {
+      "url": "https://www.mi.com/global/support/faq/details/KA-673648/",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "First-time180 and mid-task120 ml. Q40 prewets before each wet task; Q26 returns at5/8/10m² or min (default8); final wash exists but its volume is unstated."
     }
   ]
 }

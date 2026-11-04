@@ -20,7 +20,9 @@
     "Complete modes/routes/wash option tables",
     "DirTect trigger telemetry",
     "HA bindings and dynamic volume",
-    "Firmware/SKU conditions"
+    "Firmware/SKU conditions",
+    "Unobserved DirTect changes can change water flow within one nominal setting.",
+    "Exact SKU/firmware and HA enum/completion bindings remain unverified."
   ],
   "provenance": [
     {
@@ -28,6 +30,12 @@
       "date": "2026-09-05",
       "type": "manufacturer",
       "claim": "Manufacturer lists carpet clean/skip/ignore preferences and DirTect adaptive changes to suction and mop-only water flow. Adaptive behavior is not an enumerated water dose."
+    },
+    {
+      "url": "https://support.roborock.com/hc/en-us/articles/33954061643673-What-s-the-key-features-of-S8-MaxV-Ultra",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "DirTect increases water flow in mop-only for stains; liftable mop, auto tank refill and detergent. No quantitative adaptive water increment."
     }
   ]
 }

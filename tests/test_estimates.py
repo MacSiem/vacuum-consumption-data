@@ -9,7 +9,8 @@ from tools.validate import load_records, validate_dataset
 class EstimateContractTests(unittest.TestCase):
     def setUp(self):
         self.records = load_records()
-        self.estimate = next(r for r in self.records if r["kind"] == "estimate")
+        self.estimate = next(r for r in self.records if r["kind"] == "estimate"
+                             and r["estimate_readiness"] == "labeled_runtime_estimate")
 
     def test_declared_quantity_is_a_labeled_estimate_not_a_measurement_or_profile(self):
         result = resolve_estimate(self.records, self.estimate["context"])
@@ -17,6 +18,19 @@ class EstimateContractTests(unittest.TestCase):
         self.assertEqual(result["source_type"], "manufacturer_declaration")
         self.assertEqual(result["quantity"]["unit"], "ml/action")
         self.assertFalse(any(r["kind"] == "profile" and r["review"]["status"] == "approved" for r in self.records))
+
+    def test_calibration_only_sources_survive_export_without_runtime_promotion(self):
+        records = verify(build(self.records))["records"]
+        pending = [record for record in records if record["kind"] == "estimate"
+                   and record["estimate_readiness"] == "calibration_only"]
+        self.assertEqual({record["id"] for record in pending}, {
+            "concept_vr4050_wash_standard_labeled",
+            "concept_vr4050_wash_deep_labeled",
+        })
+        for record in pending:
+            with self.subTest(record=record["id"]):
+                self.assertEqual(resolve_estimate(records, record["context"])["status"], "unknown")
+        self.assertEqual(resolve_estimate(records, self.estimate["context"])["status"], "labeled_estimate")
 
     def test_wrong_model_and_incomplete_basis_are_unknown(self):
         wrong = copy.deepcopy(self.estimate["context"])

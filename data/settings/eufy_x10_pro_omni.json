@@ -29,6 +29,25 @@
         "vacuum_and_mop"
       ],
       "ha_value_mapping_verified": false
+    },
+    {
+      "name": "water_level",
+      "options": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "wash_frequency",
+      "options": [
+        "by_room",
+        "15_minutes",
+        "20_minutes",
+        "25_minutes"
+      ],
+      "ha_value_mapping_verified": false
     }
   ],
   "rules": [],
@@ -38,7 +57,9 @@
     "Other vacuum/mop mode choices not confirmed by consulted text",
     "Water level labels and HA enum values",
     "Wash frequency/temperature and passes",
-    "Allowed setting combinations and firmware applicability"
+    "Allowed setting combinations and firmware applicability",
+    "High15/medium20/low25 are recommendations, not forbidden combinations.",
+    "Exact SKU/firmware and HA enum/completion bindings remain unverified."
   ],
   "provenance": [
     {
@@ -46,6 +67,12 @@
       "date": "2026-09-05",
       "type": "manufacturer",
       "claim": "Manual sections 3.5/3.6/4 list task scopes, suction settings and automatic vacuum-and-mop. Three water levels are stated without text labels. Home cleaning uses edges then Z-shaped path; not proof of a selectable route."
+    },
+    {
+      "url": "https://service.eufy.com/article-description/Does-the-X10-Pro-Omni-have-an-onboard-water-tank",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "X10:80ml robot/3L dock; by-room or15–25min wash; recommends high15/medium20/low25min. Coverage marketing1500–2000ft² up to3 times, no metered rate."
     }
   ]
 }

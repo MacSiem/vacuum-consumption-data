@@ -1,0 +1,56 @@
+{
+  "id": "settings.tapo_rv50_omni",
+  "kind": "settings_catalog",
+  "model_id": "tapo_rv50_omni",
+  "dimensions": [
+    {
+      "name": "wash_frequency",
+      "options": [
+        "by_room",
+        "time_10_min",
+        "time_15_min",
+        "time_20_min",
+        "time_25_min"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "wash_mode",
+      "options": [
+        "smart",
+        "water_saved",
+        "daily",
+        "deep"
+      ],
+      "ha_value_mapping_verified": false
+    }
+  ],
+  "rules": [],
+  "relationships_complete": false,
+  "confidence": "declared",
+  "unknowns": [
+    "Candidate FAQ options, not exact hardware certification; cold-only non-Pro review conflicts with generic hot option, so no hot setting imported.",
+    "AU review8/10/12min is separate firmware-specific evidence; robot capacity remains unknown.",
+    "Exact SKU/firmware and HA enum/completion bindings remain unverified."
+  ],
+  "provenance": [
+    {
+      "url": "https://www.tapo.com/us/faqs/dock-settings-for-tapo-robot-vacuum/",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "Wash by room or10/15/20/25min; Smart/Water-Saved/Daily/Deep; Standard/Hot; auto detergent toggle. Article explicitly warns model-dependent support."
+    },
+    {
+      "url": "https://www.tapo.com/en/product/tapo-rv50-omni-robot-vacuum/specs/",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "RV50 non-Pro:5L/4L dock,3 output levels, dual spinning mops, recharge/resume; robot water volume unstated."
+    },
+    {
+      "url": "https://www.tapo.com/pt/faq/1918/?app=decoQoS",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "Regional applies-to includesRV50Omni; exact supported subset varies by hardware/firmware."
+    }
+  ]
+}

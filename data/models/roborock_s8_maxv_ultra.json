@@ -23,6 +23,12 @@
       "date": "2026-09-05",
       "type": "manufacturer",
       "claim": "Root confirmed capacities (ml): dock_clean=4000, robot_clean=100; no consumption claim."
+    },
+    {
+      "url": "https://www.afterdawn.com/news/article.cfm/2024/08/15/roborock-s8-maxv-ultra-review",
+      "date": "2026-11-04",
+      "type": "empirical",
+      "claim": "Two-month use: refill interval approximately200–300m² at medium floor water. Wash settings and measured drawn volume absent."
     }
   ],
   "confidence": "declared",

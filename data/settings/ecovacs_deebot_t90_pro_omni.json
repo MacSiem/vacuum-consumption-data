@@ -1,0 +1,32 @@
+{
+  "id": "settings.ecovacs_deebot_t90_pro_omni",
+  "kind": "settings_catalog",
+  "model_id": "ecovacs_deebot_t90_pro_omni",
+  "dimensions": [
+    {
+      "name": "cleaning_mode",
+      "options": [
+        "vacuum_only",
+        "vacuum_and_mop",
+        "vacuum_then_mop"
+      ],
+      "ha_value_mapping_verified": false
+    }
+  ],
+  "rules": [],
+  "relationships_complete": false,
+  "confidence": "declared",
+  "unknowns": [
+    "50 output levels are cardinality only; exact enum/range not supplied.",
+    "Roller self-rinsing, dirty-box self-clean and robot refill must have separate observable bounds.",
+    "Exact SKU/firmware and HA enum/completion bindings remain unverified."
+  ],
+  "provenance": [
+    {
+      "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "US spec:110ml robot,4L/2.2L dock,50 output levels, sequential option,75C wash, roller32nozzles, dirty-box self-clean. Coverage400m² in table versus500m² battery task text is not consumption."
+    }
+  ]
+}

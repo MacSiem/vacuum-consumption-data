@@ -11,8 +11,8 @@
   "reservoirs_ml": {
     "dock_clean": null,
     "dock_dirty": null,
-    "robot_clean": null,
-    "robot_dirty": null,
+    "robot_clean": 110,
+    "robot_dirty": 95,
     "detergent": null
   },
   "inventory_status": "researched_partial",
@@ -28,6 +28,12 @@
       "date": "2026-09-05",
       "type": "integration_code",
       "claim": "Model/reference source; reservoir values only adopted where separately confirmed in root review."
+    },
+    {
+      "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x8-pro-omni",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "X8:110ml clean/95ml dirty robot,4L/4L dock,50 output levels,16nozzles,40–75C wash, remop and wastewater scraping. No depletion coefficient."
     }
   ],
   "confidence": "unknown",
@@ -38,8 +44,7 @@
     "Reservoir null means unknown, not zero or absent",
     "Unknown dock_clean capacity",
     "Unknown dock_dirty capacity",
-    "Unknown robot_clean capacity",
-    "Unknown robot_dirty capacity",
-    "Unknown detergent capacity"
+    "Unknown detergent capacity",
+    "US manufacturer capacity declaration110/95ml does not prove exact reported regional SKU or consumption."
   ]
 }

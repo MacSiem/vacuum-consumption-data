@@ -1,0 +1,35 @@
+{
+  "id": "roborock_q8_max_plus",
+  "kind": "model",
+  "manufacturer": "Roborock",
+  "name": "Q8 Max+",
+  "public_model_ids": [
+    "Q8 Max+"
+  ],
+  "regional_skus": [],
+  "integration_candidates": [
+    "roborock"
+  ],
+  "reservoirs_ml": {
+    "dock_clean": null,
+    "dock_dirty": null,
+    "robot_clean": null,
+    "robot_dirty": null,
+    "detergent": null
+  },
+  "inventory_status": "researched_partial",
+  "provenance": [
+    {
+      "url": "https://www.reddit.com/r/Roborock/comments/1eegord/do_you_empty_mop_watersolution_each_time/",
+      "date": "2026-11-04",
+      "type": "empirical",
+      "claim": "Public owner reports high setting0.4ml/ft² via before/after tank weighing and app area;≈4.3056ml/m² by unit conversion, no uncertainty/sample/firmware metadata."
+    }
+  ],
+  "confidence": "unknown",
+  "unknowns": [
+    "Public reported measurement is not a submitted consented cycle record.",
+    "Scale resolution, repetitions, exact SKU/firmware/route/passes and liquid density unknown.",
+    "No family transfer to Q7/S8; no new runtime rate."
+  ]
+}

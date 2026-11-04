@@ -40,6 +40,12 @@
       "date": "2026-09-05",
       "type": "manufacturer",
       "claim": "FAQ Q62 gives 180 ml for first-time cleaning."
+    },
+    {
+      "url": "https://www.mi.com/global/support/faq/details/KA-673648/",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "Rechecked original action quantity and limits on2026-11-04; see research source ledger."
     }
   ],
   "confidence": "declared",

@@ -1,0 +1,65 @@
+{
+  "id": "concept_vr4050_wash_standard_labeled",
+  "kind": "estimate",
+  "source_type": "manufacturer_declaration",
+  "estimate_readiness": "calibration_only",
+  "basis_kind": "manufacturer_declared_quantity",
+  "basis_ids": [
+    "concept_vr4050_wash_standard"
+  ],
+  "confidence": "declared_source_limited",
+  "label": "Manufacturer-declared, limited estimate",
+  "limitations": [
+    "Not a physical measurement or approved profile.",
+    "Use only for named action/mode/reservoir; SKU, firmware and HA completion semantics unknown."
+  ],
+  "quantity": {
+    "value": 130,
+    "unit": "ml/action"
+  },
+  "method": "Preserve declared action quantity; do not infer pump flow or floor dose.",
+  "applicability": {
+    "model_scope": "named_model",
+    "sku_scope": "unknown",
+    "firmware_scope": "unknown"
+  },
+  "context": {
+    "model_id": "concept_vr4050",
+    "sku": null,
+    "dock_variant": null,
+    "firmware": null,
+    "integration_id": null,
+    "integration_version": null,
+    "reservoir": "dock_clean",
+    "action": "mop_wash",
+    "settings": {
+      "mop_mode": null,
+      "water_level": null,
+      "route": null,
+      "passes": null,
+      "wash_mode": "standard",
+      "wash_frequency": null,
+      "wash_temperature": null,
+      "adaptive_mode": null,
+      "detergent_mode": null,
+      "cleaning_mode": null,
+      "task_scope": null,
+      "suction_level": null,
+      "carpet_policy": null
+    }
+  },
+  "provenance": [
+    {
+      "url": "https://www.my-concept.sk/img.asp?attid=56409021",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "Source declaration preserved without physical validation."
+    }
+  ],
+  "unknowns": [
+    "HA integration and property binding",
+    "Firmware and regional equivalence",
+    "Whether concurrent robot refill is included",
+    "Independent validation"
+  ]
+}

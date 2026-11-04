@@ -1,0 +1,36 @@
+{
+  "id": "settings.roborock_s7_maxv",
+  "kind": "settings_catalog",
+  "model_id": "roborock_s7_maxv",
+  "dimensions": [
+    {
+      "name": "wash_mode",
+      "options": [
+        "balanced"
+      ],
+      "ha_value_mapping_verified": false
+    },
+    {
+      "name": "wash_frequency",
+      "options": [
+        "20_minutes_reference"
+      ],
+      "ha_value_mapping_verified": false
+    }
+  ],
+  "rules": [],
+  "relationships_complete": false,
+  "confidence": "declared",
+  "unknowns": [
+    "Reference default does not enumerate all available options.",
+    "Exact SKU/firmware and HA enum/completion bindings remain unverified."
+  ],
+  "provenance": [
+    {
+      "url": "https://support.roborock.com/hc/en-us/articles/6568621037081-How-often-do-I-need-to-refill-Clean-Water-Tank-of-S7-MaxV-Ultra",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "Reference3–4 days for100m² home once daily, balanced wash every20min; not actual wet area or metered depletion."
+    }
+  ]
+}

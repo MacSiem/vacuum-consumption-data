@@ -28,6 +28,12 @@
       "date": "2026-09-05",
       "type": "integration_code",
       "claim": "Model/reference source; reservoir values only adopted where separately confirmed in root review."
+    },
+    {
+      "url": "https://global.dreametech.com/products/dreame-x50-ultra-complete",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "32 floor water levels; optional rewash/remop;80C outlet wash with4 temperature choices; mop lift/detach; automatic robot refill and optional plumbing. No flow per level."
     }
   ],
   "confidence": "declared",

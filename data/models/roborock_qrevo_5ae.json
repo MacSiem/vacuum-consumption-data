@@ -32,6 +32,18 @@
       "date": "2026-09-05",
       "type": "integration_code",
       "claim": "Reporter supplied model identifier; not manufacturer capacity evidence."
+    },
+    {
+      "url": "https://ae.roborock.com/pages/roborock-qrevo-5ae",
+      "date": "2026-11-04",
+      "type": "manufacturer",
+      "claim": "Named5AE has30 water-flow choices, liftable rotating mops, self-washing/refill. No flow-per-setting values."
+    },
+    {
+      "url": "https://www.agdmaniak.pl/124755/roborock-qrevo-5ae-test/amp/",
+      "date": "2026-11-04",
+      "type": "empirical",
+      "claim": "5AE deep wash reportedly150–160ml in3min40s; no instrument/sample count. Output1–30, repeats1–2, route overlap2/3/4 and minimum wash10min or by room; no hot wash."
     }
   ],
   "confidence": "declared",
